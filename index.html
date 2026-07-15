@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fidgital World | AI Programs for Kids | Fun with AI &amp; Learn with AI</title>
+  <meta name="description" content="Fidgital World runs two live weekend AI programs for kids aged 10+: Fun with AI, a creative workshop building stories, songs, comics and games, and Learn with AI, a hands-on program in research, creating, and speaking skills." />
+  <meta name="keywords" content="Fidgital World, AI programs for kids, AI workshop for kids, AI learning program for kids, AI camp India, kids AI education, learn AI for kids, creative AI workshop, AI classes for children" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Fidgital World" />
+  <link rel="canonical" href="https://fidgitalworld.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fidgital World | AI Programs for Kids" />
+  <meta property="og:description" content="Two live AI programs for kids aged 10+: Fun with AI (creative projects) and Learn with AI (research, creating &amp; speaking skills)." />
+  <meta property="og:url" content="https://fidgitalworld.com/" />
+  <meta property="og:site_name" content="Fidgital World" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fidgital World | AI Programs for Kids" />
+  <meta name="twitter:description" content="Two live AI programs for kids aged 10+: Fun with AI and Learn with AI." />
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Fidgital World",
+    "description": "Fidgital World is a platform where kids explore building with AI through two live, instructor-led programs: Fun with AI, a creative workshop where kids build an original character, storybook, comic, theme song, playable game, and paper puppet using tools like Gemini, Suno, and Bolt; and Learn with AI, a hands-on program teaching research, safe and responsible AI use, creative writing, and speaking practice.",
+    "url": "https://fidgitalworld.com",
+    "sameAs": [],
+    "areaServed": { "@type": "Country", "name": "India" },
+    "knowsAbout": ["AI education for children", "generative AI workshops", "creative AI tools", "AI research skills", "safe AI use for kids", "prompt engineering for kids", "STEM education"]
+  }
+  </script>
+
+  <!-- Structured Data: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Which program is right for my kid?", "acceptedAnswer": { "@type": "Answer", "text": "Fun with AI is about creative projects — a character, story, comic, song, and game. Learn with AI focuses on research, creating, and speaking skills for school and beyond. Same instructor, same safety-first approach either way — plenty of kids do both." } },
+      { "@type": "Question", "name": "Is coding needed?", "acceptedAnswer": { "@type": "Answer", "text": "No, for either program. If they can type and imagine, they're ready." } },
+      { "@type": "Question", "name": "Is this safe for my child?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — safety and responsible AI use is built into every session in both programs, not a one-time lecture." } },
+      { "@type": "Question", "name": "What age are these for?", "acceptedAnswer": { "@type": "Answer", "text": "Age 10+ for both. Basic English reading and typing is enough." } },
+      { "@type": "Question", "name": "What device do they need?", "acceptedAnswer": { "@type": "Answer", "text": "A laptop is recommended for the best experience. A tablet or phone works but might be a hassle for some sessions." } },
+      { "@type": "Question", "name": "Do they keep everything they create?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, 100%. Everything they make is theirs, and both programs end with a certificate of completion." } }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fidgitalworld.com/" }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --warm-bg: #FFFDF0;
+      --cool-bg: #E8F4FA;
+      --gold: #FAE0A0;
+      --gold-dark: #E8A838;
+      --teal: #2A96C0;
+      --dark: #2D3436;
+      --body: #4A4A4A;
+      --muted: #7A7A72;
+      --white: #fff;
+      --border: #e8e4dc;
+      --radius: 12px;
+      --radius-lg: 16px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { max-width: 100%; display: block; }
+
+    /* ── Nav ── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      background: rgba(255,253,240,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .nav-inner {
+      max-width: 960px; margin: 0 auto;
+      padding: 0 16px; height: 60px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .nav-logo { font-size: 16px; font-weight: 700; color: var(--dark); text-decoration: none; display: flex; align-items: center; }
+    .nav-logo-img { height: 48px; }
+
+    /* ── Section bases ── */
+    .section { padding: 48px 16px; }
+    .section-warm { background: var(--warm-bg); }
+    .section-cool { background: var(--cool-bg); }
+    .section-inner { max-width: 800px; margin: 0 auto; }
+    .section-wide { max-width: 960px; margin: 0 auto; }
+
+    /* ── Typography ── */
+    .text-center { text-align: center; }
+    .mb-2 { margin-bottom: 8px; }
+    .mb-3 { margin-bottom: 12px; }
+    .mb-4 { margin-bottom: 16px; }
+    .mb-5 { margin-bottom: 20px; }
+    .mb-6 { margin-bottom: 24px; }
+    .mb-7 { margin-bottom: 28px; }
+    .mb-8 { margin-bottom: 32px; }
+
+    .heading-xl { font-size: clamp(28px, 6vw, 48px); font-weight: 800; line-height: 1.15; color: var(--dark); }
+    .heading-lg { font-size: clamp(22px, 5vw, 36px); font-weight: 700; line-height: 1.2; color: var(--dark); }
+    .text-blue { color: var(--teal); }
+    .text-body { color: var(--body); font-size: clamp(13px, 3.2vw, 17px); font-weight: 500; }
+    .text-muted { color: var(--muted); }
+
+    /* ── Badge / pill ── */
+    .badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; }
+    .badge-blue { background: var(--gold); color: var(--dark); }
+    .pill { display: inline-flex; align-items: center; gap: 5px; background: var(--warm-bg); color: var(--body); padding: 6px 12px; border-radius: 50px; font-size: 11px; font-weight: 600; border: 1px solid #e0e0e0; white-space: nowrap; }
+
+    /* ── Button ── */
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 28px; border-radius: 50px; font-size: 14px; font-weight: 700; text-decoration: none; border: none; cursor: pointer; transition: all 0.15s; }
+    .btn-primary { background: var(--gold-dark); color: var(--dark); }
+    .btn:hover { filter: brightness(1.05); transform: translateY(-1px); }
+    .btn-block { width: 100%; }
+    .btn svg { width: 16px; height: 16px; }
+
+    /* ── Option cards (the 2 choices) ── */
+    .grid-2 { display: grid; grid-template-columns: 1fr; gap: 20px; }
+    @media (min-width: 768px) { .grid-2 { grid-template-columns: 1fr 1fr; gap: 28px; } }
+
+    .option-card {
+      border-radius: var(--radius-lg);
+      padding: 32px 26px;
+      display: flex; flex-direction: column;
+      transition: all 0.2s;
+      text-decoration: none; color: inherit;
+      border: 2px solid transparent;
+    }
+    .option-card.fun { background: linear-gradient(180deg, #FFF6DF 0%, #fff 65%); border-color: var(--gold); }
+    .option-card.learn { background: linear-gradient(180deg, #E3F3FA 0%, #fff 65%); border-color: var(--teal); }
+    .option-card:hover { box-shadow: 0 14px 36px rgba(0,0,0,0.1); transform: translateY(-4px); }
+    .option-icon {
+      width: 56px; height: 56px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px; margin-bottom: 16px;
+    }
+    .option-card.fun .option-icon { background: var(--gold); }
+    .option-card.learn .option-icon { background: var(--teal); }
+    .option-kicker { font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 6px; }
+    .option-card.fun .option-kicker { color: var(--gold-dark); }
+    .option-card.learn .option-kicker { color: var(--teal); }
+    .option-title { font-size: clamp(22px, 4.5vw, 28px); font-weight: 800; color: var(--dark); margin-bottom: 8px; }
+    .option-desc { font-size: clamp(13px, 2.8vw, 15px); font-weight: 500; color: var(--body); line-height: 1.6; margin-bottom: 18px; }
+    .option-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 24px; }
+    .option-pills .pill { background: rgba(255,255,255,0.75); }
+    .option-cta {
+      margin-top: auto; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+      font-weight: 700; font-size: 14px; padding: 12px 20px; border-radius: 50px; color: var(--dark);
+    }
+    .option-card.fun .option-cta { background: var(--gold-dark); }
+    .option-card.learn .option-cta { background: var(--teal); color: #fff; }
+    .option-cta svg { width: 15px; height: 15px; transition: transform 0.15s; }
+    .option-card:hover .option-cta svg { transform: translateX(3px); }
+
+    /* ── Instructor strip ── */
+    .instructor-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px; }
+    .instructor-name { font-size: clamp(14px, 3.5vw, 18px); font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+    .instructor-bio { font-size: clamp(12px, 2.8vw, 14px); font-weight: 500; color: var(--body); line-height: 1.7; }
+
+    /* ── Free guide banner ── */
+    .guide-banner {
+      display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+      background: #fff; border: 1.5px solid var(--gold-dark); border-radius: var(--radius-lg);
+      padding: 20px 24px;
+    }
+    .guide-banner-text { font-size: clamp(13px, 2.8vw, 15px); font-weight: 600; color: var(--dark); }
+    .guide-banner-text span { display: block; font-size: 11px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 4px; }
+
+    /* ── FAQ ── */
+    .faq-item { background: #fff; border: 1.5px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 10px; }
+    .faq-q { width: 100%; padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; background: none; border: none; cursor: pointer; font-family: inherit; text-align: left; }
+    .faq-q-text { font-size: clamp(12px, 2.8vw, 14px); font-weight: 700; color: var(--dark); }
+    .faq-arrow { width: 14px; height: 14px; color: #c0c0c0; transition: transform 0.2s; flex-shrink: 0; }
+    .faq-item.open .faq-arrow { transform: rotate(90deg); color: var(--teal); }
+    .faq-item.open { border-color: var(--teal); }
+    .faq-a { padding: 0 16px 14px; font-size: clamp(11px, 2.6vw, 14px); font-weight: 500; color: var(--body); display: none; }
+    .faq-item.open .faq-a { display: block; }
+
+    /* ── Footer ── */
+    .footer { padding: 32px 16px; background: var(--gold); text-align: center; }
+    .footer-logo { height: 80px; margin: 0 auto; border-radius: 8px; }
+    .footer-copy { color: var(--dark); font-size: 10px; }
+
+    /* ── Tablet (768px+) ── */
+    @media (min-width: 768px) {
+      .nav-inner { height: 72px; padding: 0 24px; }
+      .nav-logo-img { height: 60px; }
+      .section { padding: 64px 24px; }
+      .section-inner { max-width: 860px; }
+      .section-wide { max-width: 1060px; }
+      .heading-xl { font-size: 52px; }
+      .heading-lg { font-size: 38px; }
+      .text-body { font-size: 18px; }
+      .badge { font-size: 14px; padding: 6px 18px; }
+      .pill { font-size: 13px; padding: 8px 16px; }
+      .btn { padding: 14px 32px; font-size: 16px; }
+      .btn svg { width: 18px; height: 18px; }
+      .option-card { padding: 40px 36px; }
+      .option-icon { width: 68px; height: 68px; font-size: 34px; margin-bottom: 20px; }
+      .option-kicker { font-size: 12px; }
+      .instructor-card { padding: 36px; }
+      .instructor-name { font-size: 20px; }
+      .instructor-bio { font-size: 16px; }
+      .footer { padding: 40px 24px; }
+      .footer-logo { height: 100px; }
+      .footer-copy { font-size: 12px; }
+    }
+
+    /* ── Desktop (1024px+) ── */
+    @media (min-width: 1024px) {
+      .nav-inner { height: 88px; max-width: 1200px; padding: 0 40px; }
+      .nav-logo-img { height: 72px; }
+      .section { padding: 80px 40px; }
+      .section-inner { max-width: 900px; }
+      .section-wide { max-width: 1140px; }
+      .heading-xl { font-size: 60px; }
+      .heading-lg { font-size: 44px; }
+      .text-body { font-size: 20px; }
+      .option-card { padding: 48px; }
+      .option-icon { width: 76px; height: 76px; font-size: 38px; }
+      .footer { padding: 48px 40px; }
+      .footer-logo { height: 120px; }
+      .footer-copy { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="Logo-1.png" alt="Fidgital World" class="nav-logo-img" /></a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="section section-warm" style="padding-top: 110px;">
+    <div class="section-inner text-center">
+      <div class="mb-6">
+        <span class="badge badge-blue">Fidgital World</span>
+      </div>
+      <h1 class="heading-xl mb-5">
+        <span style="color:var(--gold-dark);">Fun with AI.</span><br>
+        <span class="text-blue">Learn with AI.</span>
+      </h1>
+      <p class="text-body" style="max-width: 480px; margin-left: auto; margin-right: auto;">
+        Two live programs for kids aged 10+. Pick the path that fits — build something fun, or build real skills.
+      </p>
+    </div>
+  </section>
+
+  <!-- The Two Options -->
+  <section class="section section-cool">
+    <div class="section-wide">
+      <div class="grid-2">
+
+        <a href="fun-with-ai.html" class="option-card fun">
+          <div class="option-icon">🎨</div>
+          <div class="option-kicker">Creative Projects</div>
+          <div class="option-title">Fun with AI</div>
+          <p class="option-desc">2 sessions. 6 creations. Build a character, story, comic, puppet, song &amp; game — all with AI, all theirs to keep.</p>
+          <div class="option-pills">
+            <span class="pill">🗓️ 1 day or split into 2</span>
+            <span class="pill">🎮 Stories, songs &amp; games</span>
+            <span class="pill">👤 Age 10+</span>
+            <span class="pill">📎 Prompt library included</span>
+          </div>
+          <span class="option-cta">Explore Fun with AI
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+          </span>
+        </a>
+
+        <a href="learn-with-ai.html" class="option-card learn">
+          <div class="option-icon">🧠</div>
+          <div class="option-kicker">Real Skills</div>
+          <div class="option-title">Learn with AI</div>
+          <p class="option-desc">A hands-on program in thinking, researching, creating &amp; speaking with AI — for real skills that help in school and beyond.</p>
+          <div class="option-pills">
+            <span class="pill">🗓️ 1 day or split into 2</span>
+            <span class="pill">📚 Research, creating &amp; speaking</span>
+            <span class="pill">👤 Age 10+</span>
+            <span class="pill">📎 Prompt library included</span>
+          </div>
+          <span class="option-cta">Explore Learn with AI
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Instructor -->
+  <section class="section section-warm">
+    <div class="section-inner">
+      <div class="text-center mb-8">
+        <span class="badge badge-blue mb-3" style="display:inline-flex;">Your Instructor, Both Programs</span>
+        <h2 class="heading-lg">Meet Palak Gupta</h2>
+      </div>
+      <div class="instructor-card">
+        <p class="instructor-name">Designer. Educator. Creator.</p>
+        <p class="instructor-bio">Palak is a product designer and builder who turns ideas into real, working systems — not just concepts. She builds AI-powered systems that put entire business operations on autopilot, and has helped 40+ companies craft investor decks that raised real funding.</p>
+        <p class="instructor-bio" style="margin-top:12px;">She holds a Master's in Design from Georgia Tech, USA, and a Bachelor's from MIT Institute of Design, and has worked with companies like Panasonic, Voltas, and Genuine Parts Company.</p>
+        <p class="instructor-bio" style="margin-top:12px;">At Fidgital World, she teaches how to build with AI in a clear, hands-on way — helping learners move from curiosity to creating something real, whether that's a playable game or a genuinely useful new skill.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Safety Chat -->
+  <section class="section section-cool">
+    <div class="section-inner">
+      <a href="ai-survival-guide.html" class="guide-banner" style="text-decoration:none;" onclick="if(window.fwOpenChat){fwOpenChat();return false;}">
+        <div class="guide-banner-text">
+          <span>Free · No sign-up</span>
+          🛡️ Try the AI Safety Chat — real AI moments, real consequences
+        </div>
+        <span class="btn btn-primary" style="flex-shrink:0;">
+          Chat now
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-warm">
+    <div class="section-inner" style="max-width:480px;">
+      <h2 class="heading-md text-center mb-7" style="color:var(--dark);">FAQ</h2>
+
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <button class="faq-q"><span class="faq-q-text">Which program is right for my kid?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9,18 15,12 9,6"/></svg></button>
+        <div class="faq-a">Fun with AI is about creative projects — a character, story, comic, song, and game. Learn with AI focuses on research, creating, and speaking skills for school and beyond. Same instructor, same safety-first approach either way — plenty of kids do both.</div>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <button class="faq-q"><span class="faq-q-text">Is coding needed?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9,18 15,12 9,6"/></svg></button>
+        <div class="faq-a">No, for either program. If they can type and imagine, they're ready.</div>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <button class="faq-q"><span class="faq-q-text">Is this safe for my child?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9,18 15,12 9,6"/></svg></button>
+        <div class="faq-a">Yes — safety and responsible AI use is built into every session in both programs, not a one-time lecture. Try our free <a href="ai-survival-guide.html" style="color:var(--teal);" onclick="if(window.fwOpenChat){fwOpenChat();return false;}">AI Safety Chat</a> to see the ground rules kids take home.</div>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <button class="faq-q"><span class="faq-q-text">What age are these for?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9,18 15,12 9,6"/></svg></button>
+        <div class="faq-a">Age 10+ for both. Basic English reading and typing is enough.</div>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <button class="faq-q"><span class="faq-q-text">What device do they need?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9,18 15,12 9,6"/></svg></button>
+        <div class="faq-a">A laptop is recommended for the best experience. A tablet or phone works but might be a hassle for some sessions.</div>
+      </div>
+      <div class="faq-item" onclick="this.classList.toggle('open')">
+        <button class="faq-q"><span class="faq-q-text">Do they keep everything they create?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9,18 15,12 9,6"/></svg></button>
+        <div class="faq-a">Yes, 100%. Everything they make is theirs, and both programs end with a certificate of completion.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div style="margin-bottom:12px;"><img src="Logo-2.png" alt="Fidgital World" class="footer-logo" /></div>
+    <div class="footer-copy">© 2026 Fidgital World · All rights reserved</div>
+  </footer>
+
+  <script src="ai-safety-widget.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Papaya on Vacation — AI-Created Character | Fidgital World</title>
+  <meta name="description" content="See what kids create in Fidgital World's AI workshop: Papaya on Vacation — a full character with storybook, comic, theme song, video game, and finger puppet, all made using AI tools." />
+  <meta name="keywords" content="AI workshop for kids, kids AI project, AI storytelling, AI game making, Fidgital World, creative AI for children, Papaya character" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://fidgitalworld.com/papaya.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Papaya on Vacation — AI-Created Character | Fidgital World" />
+  <meta property="og:description" content="One character. Six creations. All made by a kid using AI in 6 days." />
+  <meta property="og:url" content="https://fidgitalworld.com/papaya.html" />
+  <meta property="og:site_name" content="Fidgital World" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --warm-bg: #FFFDF0;
+      --cool-bg: #E8F4FA;
+      --gold: #FAE0A0;
+      --gold-dark: #E8A838;
+      --teal: #2A96C0;
+      --dark: #2D3436;
+      --body: #4A4A4A;
+      --muted: #7A7A72;
+      --white: #fff;
+      --border: #e8e4dc;
+      --radius: 14px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--dark);
+      background: var(--warm-bg);
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      background: rgba(255,253,240,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .nav-inner {
+      max-width: 640px; margin: 0 auto;
+      padding: 0 16px; height: 60px;
+      display: flex; align-items: center; justify-content: space-between;
+      position: relative;
+    }
+    .nav-back {
+      display: flex; align-items: center; gap: 4px;
+      font-size: 13px; font-weight: 600; color: var(--teal);
+      text-decoration: none; position: relative; z-index: 2;
+    }
+    .nav-back svg { width: 16px; height: 16px; }
+    .nav-logo {
+      position: absolute; left: 50%; transform: translateX(-50%);
+      font-size: 15px; font-weight: 700; color: var(--dark);
+      text-decoration: none; display: flex; align-items: center;
+    }
+    .nav-logo-img { height: 48px; }
+
+    .page { max-width: 640px; margin: 0 auto; padding: 0 16px; }
+    .text-center { text-align: center; }
+
+    .hero { padding-top: 76px; padding-bottom: 24px; text-align: center; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 4px 12px; border-radius: 50px;
+      font-size: 11px; font-weight: 700;
+      background: var(--white); color: var(--gold-dark);
+      border: 1.5px solid var(--gold); margin-bottom: 12px;
+    }
+    .hero-title {
+      font-size: clamp(26px, 7vw, 36px);
+      font-weight: 800; color: var(--dark); margin-bottom: 8px;
+    }
+    .hero-sub {
+      font-size: 13px; font-weight: 500; color: var(--body);
+      line-height: 1.5; margin-bottom: 20px;
+      max-width: 380px; margin-left: auto; margin-right: auto;
+    }
+    .hero-img {
+      border-radius: var(--radius); overflow: hidden;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.06); margin-bottom: 8px;
+    }
+    .hero-img img { width: 100%; }
+
+    .section-label {
+      font-size: 13px; font-weight: 700; color: var(--gold-dark);
+      margin-bottom: 16px; padding-top: 32px;
+    }
+
+    .tile {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); overflow: hidden;
+      margin-bottom: 14px; transition: all 0.15s;
+    }
+    .tile:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
+
+    .tile-header {
+      padding: 12px 14px 8px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .tile-emoji { font-size: 18px; }
+    .tile-day { font-size: 10px; font-weight: 700; color: var(--teal); text-transform: uppercase; letter-spacing: 0.3px; }
+    .tile-name { font-size: 14px; font-weight: 700; color: var(--dark); }
+
+    .tile-media { position: relative; background: var(--cool-bg); }
+    .tile-media img { width: 100%; display: block; }
+    .tile-media video { width: 100%; display: block; }
+    .tile-overlay {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(0,0,0,0.25);
+      opacity: 0; transition: opacity 0.2s;
+    }
+    .tile:hover .tile-overlay { opacity: 1; }
+    .tile-overlay-btn {
+      background: var(--white); color: var(--dark);
+      padding: 8px 20px; border-radius: 50px;
+      font-size: 13px; font-weight: 700;
+      display: flex; align-items: center; gap: 6px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+
+    .tile-footer {
+      padding: 10px 14px 12px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .tile-actions {
+      display: flex; align-items: center; gap: 12px;
+    }
+    .tile-action {
+      font-size: 11px; font-weight: 700; color: var(--teal);
+      display: flex; align-items: center; gap: 3px; white-space: nowrap;
+      text-decoration: none;
+    }
+    .tile-action svg { width: 12px; height: 12px; }
+    .tile-action-muted {
+      font-size: 11px; font-weight: 700; color: var(--muted);
+      display: flex; align-items: center; gap: 3px; white-space: nowrap;
+      text-decoration: none;
+    }
+    .tile-action-muted svg { width: 12px; height: 12px; }
+    .tile-divider {
+      width: 1px; height: 14px; background: var(--border);
+    }
+
+    a.tile { text-decoration: none; color: inherit; display: block; }
+
+    .cta-box {
+      background: var(--gold); border-radius: var(--radius);
+      padding: 28px 20px; text-align: center;
+      margin-top: 24px; margin-bottom: 32px;
+    }
+    .cta-title {
+      font-size: clamp(15px, 4vw, 20px);
+      font-weight: 700; color: var(--dark); margin-bottom: 4px;
+    }
+    .cta-sub { font-size: 12px; font-weight: 500; color: var(--body); margin-bottom: 14px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 10px 24px; border-radius: 50px;
+      font-size: 13px; font-weight: 700;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: all 0.15s; background: var(--dark); color: #fff;
+    }
+    .btn:hover { filter: brightness(1.05); transform: translateY(-1px); }
+    .btn svg { width: 14px; height: 14px; }
+
+    .footer { padding: 28px 16px; background: var(--gold); text-align: center; }
+    .footer-brand { color: #fff; font-size: 13px; font-weight: 700; margin-bottom: 3px; }
+    .footer-tagline { color: var(--gold); font-size: 11px; margin-bottom: 6px; }
+    .footer-logo { height: 80px; margin: 0 auto; border-radius: 8px; }
+    .footer-copy { color: var(--dark); font-size: 10px; }
+
+    /* ── Tablet (768px+) ── */
+    @media (min-width: 768px) {
+      .nav-inner { height: 72px; max-width: 800px; padding: 0 24px; }
+      .nav-back { font-size: 15px; gap: 6px; }
+      .nav-back svg { width: 20px; height: 20px; }
+      .nav-logo-img { height: 60px; }
+      .page { max-width: 800px; padding: 0 24px; }
+      .hero { padding-top: 92px; padding-bottom: 32px; }
+      .hero-badge { font-size: 13px; padding: 6px 16px; }
+      .hero-title { font-size: 44px; margin-bottom: 12px; }
+      .hero-sub { font-size: 16px; margin-bottom: 28px; max-width: 480px; }
+      .hero-img { margin-bottom: 12px; }
+      .section-label { font-size: 15px; margin-bottom: 20px; padding-top: 40px; }
+      .tile { margin-bottom: 20px; }
+      .tile-header { padding: 16px 20px 10px; gap: 10px; }
+      .tile-emoji { font-size: 22px; }
+      .tile-day { font-size: 12px; letter-spacing: 0.5px; }
+      .tile-name { font-size: 18px; }
+      .tile-footer { padding: 14px 20px 16px; }
+      .tile-action { font-size: 14px; gap: 5px; }
+      .tile-action svg { width: 14px; height: 14px; }
+      .tile-overlay-btn { padding: 10px 28px; font-size: 15px; }
+      .cta-box { padding: 40px 32px; margin-top: 36px; margin-bottom: 48px; }
+      .cta-title { font-size: 24px; margin-bottom: 6px; }
+      .cta-sub { font-size: 15px; margin-bottom: 20px; }
+      .btn { padding: 14px 32px; font-size: 15px; }
+      .btn svg { width: 16px; height: 16px; }
+      .footer { padding: 40px 24px; }
+      .footer-logo { height: 100px; }
+      .footer-copy { font-size: 12px; }
+    }
+
+    /* ── Desktop (1024px+) ── */
+    @media (min-width: 1024px) {
+      .nav-inner { height: 88px; max-width: 900px; padding: 0 40px; }
+      .nav-back { font-size: 16px; }
+      .nav-logo-img { height: 72px; }
+      .page { max-width: 900px; padding: 0 40px; }
+      .hero { padding-top: 112px; padding-bottom: 40px; }
+      .hero-badge { font-size: 14px; padding: 8px 20px; }
+      .hero-title { font-size: 52px; margin-bottom: 16px; }
+      .hero-sub { font-size: 18px; margin-bottom: 32px; max-width: 520px; }
+      .section-label { font-size: 16px; margin-bottom: 24px; padding-top: 48px; }
+      .tile { margin-bottom: 24px; border-radius: 18px; }
+      .tile-header { padding: 20px 24px 12px; gap: 12px; }
+      .tile-emoji { font-size: 26px; }
+      .tile-day { font-size: 13px; }
+      .tile-name { font-size: 20px; }
+      .tile-footer { padding: 16px 24px 20px; }
+      .tile-action { font-size: 15px; gap: 6px; }
+      .tile-action svg { width: 16px; height: 16px; }
+      .tile-overlay-btn { padding: 12px 32px; font-size: 16px; }
+      .cta-box { padding: 48px 40px; border-radius: 20px; }
+      .cta-title { font-size: 28px; }
+      .cta-sub { font-size: 16px; }
+      .btn { padding: 16px 36px; font-size: 16px; }
+      .footer { padding: 48px 40px; }
+      .footer-logo { height: 120px; }
+      .footer-copy { font-size: 13px; }
+    }
+
+    /* ── Large Desktop (1280px+) ── */
+    @media (min-width: 1280px) {
+      .nav-inner { max-width: 960px; }
+      .nav-logo-img { height: 88px; }
+      .page { max-width: 960px; }
+      .hero-title { font-size: 58px; }
+      .hero-sub { font-size: 19px; }
+      .tile-name { font-size: 22px; }
+      .tile-day { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
+        Back
+      </a>
+      <a href="index.html" class="nav-logo"><img src="Logo-1.png" alt="Fidgital World" class="nav-logo-img" /></a>
+    </div>
+  </nav>
+
+  <div class="page">
+
+    <div class="hero">
+      <span class="hero-badge">🟣 Example Creation</span>
+      <h1 class="hero-title">Meet Papaya on Vacation</h1>
+      <p class="hero-sub">One character. Six creations. All made with AI in 6 days.</p>
+      <div class="hero-img">
+        <img src="Papaya/1-Character.png" alt="Papaya character" />
+      </div>
+    </div>
+
+    <div class="section-label">What your kid will create ↓</div>
+
+    <!-- Storybook -->
+    <div class="tile">
+      <div class="tile-header">
+        <span class="tile-emoji">📖</span>
+        <div>
+          <div class="tile-day">Day 2 · Story</div>
+          <div class="tile-name">Papaya's Storybook</div>
+        </div>
+      </div>
+      <div class="tile-media">
+        <img src="Papaya/2-StoryBook.png" alt="Papaya Storybook preview" />
+      </div>
+      <div class="tile-footer">
+        <div></div>
+        <a href="https://online.fliphtml5.com/nuziy/2-StoryBook/" target="_blank" rel="noopener noreferrer" class="tile-action">
+          Read Online
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Comic -->
+    <div class="tile">
+      <div class="tile-header">
+        <span class="tile-emoji">💥</span>
+        <div>
+          <div class="tile-day">Day 3 · Comic</div>
+          <div class="tile-name">Papaya's Comic</div>
+        </div>
+      </div>
+      <div class="tile-media">
+        <img src="Papaya/3-Comic.png" alt="Papaya comic" />
+      </div>
+    </div>
+
+    <!-- Finger Puppet -->
+    <div class="tile">
+      <div class="tile-header">
+        <span class="tile-emoji">🤲</span>
+        <div>
+          <div class="tile-day">Day 4 · Finger Puppet</div>
+          <div class="tile-name">Papaya Finger Puppet</div>
+        </div>
+      </div>
+      <div class="tile-media">
+        <img src="Papaya/6-Paper%20Puppet.png" alt="Papaya Finger Puppet" />
+      </div>
+      <div class="tile-footer">
+        <div></div>
+        <a href="Papaya/6-Paper%20Puppet.png" download class="tile-action">
+          Download
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Song -->
+    <div class="tile">
+      <div class="tile-header">
+        <span class="tile-emoji">🎵</span>
+        <div>
+          <div class="tile-day">Day 5 · Song</div>
+          <div class="tile-name">Papaya's Theme Song</div>
+        </div>
+      </div>
+      <div class="tile-media">
+        <iframe src="https://www.youtube.com/embed/DvwkNu5u_kg" title="Papaya's Theme Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;aspect-ratio:16/9;max-height:400px;display:block;border-radius:8px;"></iframe>
+      </div>
+    </div>
+
+    <!-- Game -->
+    <a href="https://girl-dress-up-game-21jz.bolt.host" target="_blank" rel="noopener noreferrer" class="tile">
+      <div class="tile-header">
+        <span class="tile-emoji">🎮</span>
+        <div>
+          <div class="tile-day">Day 6 · Game</div>
+          <div class="tile-name">Fruit Match</div>
+        </div>
+      </div>
+      <div class="tile-media" style="position:relative;">
+        <img src="Papaya/5-Game.png" alt="Fruit Match game screenshot" />
+        <div class="tile-overlay" style="opacity:1;">
+          <span class="tile-overlay-btn">▶ Play Now</span>
+        </div>
+      </div>
+      <div class="tile-footer">
+        <div></div>
+        <span class="tile-action">
+          Play
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- CTA -->
+    <div class="cta-box">
+      <p class="cta-title">Your child could create all of this.</p>
+      <p class="cta-sub">6 days. ₹500. One character → six creations.</p>
+      <a href="index.html#pricing" class="btn">
+        Book Their Spot
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+      </a>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div style="margin-bottom:12px;"><img src="Logo-2.png" alt="Fidgital World" class="footer-logo" /></div>
+    <div class="footer-copy">© 2026 Fidgital World · All rights reserved</div>
+  </footer>
+
+</body>
+</html>
