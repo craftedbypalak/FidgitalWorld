@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Papaya on Vacation — AI-Created Character | Fidgital World</title>
-  <meta name="description" content="See what kids create in Fidgital World's AI workshop: Papaya on Vacation — a full character with storybook, comic, theme song, video game, and finger puppet, all made using AI tools." />
+  <title>Papaya on Vacation | AI-Created Character | Fidgital World</title>
+  <meta name="description" content="See what kids create in Fidgital World's AI workshop: Papaya on Vacation, a full character with storybook, comic, theme song, video game, and finger puppet, all made using AI tools." />
   <meta name="keywords" content="AI workshop for kids, kids AI project, AI storytelling, AI game making, Fidgital World, creative AI for children, Papaya character" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://fidgitalworld.com/papaya.html" />
+  <link rel="canonical" href="https://www.fidgitalworld.com/papaya.html" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Papaya on Vacation — AI-Created Character | Fidgital World" />
-  <meta property="og:description" content="One character. Six creations. All made by a kid using AI in 6 days." />
-  <meta property="og:url" content="https://fidgitalworld.com/papaya.html" />
+  <meta property="og:title" content="Papaya on Vacation | AI-Created Character | Fidgital World" />
+  <meta property="og:description" content="One character. Six creations. All made by a kid using AI." />
+  <meta property="og:url" content="https://www.fidgitalworld.com/papaya.html" />
   <meta property="og:site_name" content="Fidgital World" />
+  <meta property="og:image" content="https://www.fidgitalworld.com/Papaya/1-Character.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet" />
   <style>
@@ -41,6 +42,8 @@
     }
     img { max-width: 100%; display: block; }
 
+    [hidden] { display: none !important; }
+    [data-fw-hide-empty]:empty { display: none !important; }
     .nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 50;
       background: rgba(255,253,240,0.95);
@@ -50,21 +53,30 @@
     .nav-inner {
       max-width: 640px; margin: 0 auto;
       padding: 0 16px; height: 60px;
-      display: flex; align-items: center; justify-content: space-between;
-      position: relative;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
     }
-    .nav-back {
-      display: flex; align-items: center; gap: 4px;
-      font-size: 13px; font-weight: 600; color: var(--teal);
-      text-decoration: none; position: relative; z-index: 2;
+    .nav-logo { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
+    .nav-logo-img { height: 36px; width: auto; }
+    .nav-right { display: flex; align-items: center; gap: 22px; }
+    .nav-link { display: none; font-size: 14px; font-weight: 700; color: var(--dark); text-decoration: none; }
+    .nav-link:hover { color: var(--teal); }
+    @media (min-width: 640px) { .nav-link { display: inline; } }
+    .nav-cta {
+      display: inline-flex; align-items: center; min-height: 36px;
+      background: var(--gold-dark); color: var(--dark);
+      padding: 0 16px; border-radius: 50px;
+      font-size: 12px; font-weight: 700; white-space: nowrap;
+      text-decoration: none; border: none; cursor: pointer;
     }
-    .nav-back svg { width: 16px; height: 16px; }
-    .nav-logo {
-      position: absolute; left: 50%; transform: translateX(-50%);
-      font-size: 15px; font-weight: 700; color: var(--dark);
-      text-decoration: none; display: flex; align-items: center;
+    .nav-cta:hover { filter: brightness(1.05); }
+    @media (max-width: 479px) {
+      .nav-logo-img { height: 28px; }
+      .nav-cta { padding: 0 14px; }
     }
-    .nav-logo-img { height: 48px; }
+    @media (max-width: 359px) {
+      .nav-logo-img { height: 22px; }
+      .nav-cta { padding: 0 10px; font-size: 11px; }
+    }
 
     .page { max-width: 640px; margin: 0 auto; padding: 0 16px; }
     .text-center { text-align: center; }
@@ -184,9 +196,8 @@
     /* ── Tablet (768px+) ── */
     @media (min-width: 768px) {
       .nav-inner { height: 72px; max-width: 800px; padding: 0 24px; }
-      .nav-back { font-size: 15px; gap: 6px; }
-      .nav-back svg { width: 20px; height: 20px; }
-      .nav-logo-img { height: 60px; }
+      .nav-logo-img { height: 48px; }
+      .nav-cta { padding: 0 20px; font-size: 13px; }
       .page { max-width: 800px; padding: 0 24px; }
       .hero { padding-top: 92px; padding-bottom: 32px; }
       .hero-badge { font-size: 13px; padding: 6px 16px; }
@@ -216,7 +227,6 @@
     /* ── Desktop (1024px+) ── */
     @media (min-width: 1024px) {
       .nav-inner { height: 88px; max-width: 900px; padding: 0 40px; }
-      .nav-back { font-size: 16px; }
       .nav-logo-img { height: 72px; }
       .page { max-width: 900px; padding: 0 40px; }
       .hero { padding-top: 112px; padding-bottom: 40px; }
@@ -245,24 +255,38 @@
     /* ── Large Desktop (1280px+) ── */
     @media (min-width: 1280px) {
       .nav-inner { max-width: 960px; }
-      .nav-logo-img { height: 88px; }
+      .nav-logo-img { height: 56px; }
+      .nav-cta { padding: 0 24px; font-size: 14px; }
       .page { max-width: 960px; }
       .hero-title { font-size: 58px; }
       .hero-sub { font-size: 19px; }
       .tile-name { font-size: 22px; }
       .tile-day { font-size: 14px; }
     }
+
+    /* ── Offer line in the CTA box ── */
+    .offer { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 10px; }
+    .offer:has(> :not([hidden])) { margin-bottom: 14px; }
+    .offer .price { font-size: 28px; font-weight: 800; color: var(--dark); line-height: 1.1; }
+    .offer .price-old { font-size: 15px; color: #6f6f68; text-decoration: line-through; }
+    .chip { background: #fff; color: var(--dark); border-radius: 50px; padding: 4px 12px; font-size: 12px; font-weight: 700; }
+
+    .footer-logo-wrap { margin-bottom: 12px; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 20px; margin-bottom: 14px; }
+    .footer-links a { color: var(--dark); font-size: 13px; font-weight: 700; text-decoration: none; padding: 6px 0; }
+    .footer-links a:hover { color: var(--teal); }
   </style>
 </head>
 <body>
 
   <nav class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-back">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
-        Back
-      </a>
       <a href="index.html" class="nav-logo"><img src="Logo-1.png" alt="Fidgital World" class="nav-logo-img" /></a>
+      <div class="nav-right">
+        <a href="index.html#programs" class="nav-link">AI Programs</a>
+        <a href="play.html" class="nav-link">Play Kit</a>
+        <a href="fun-with-ai.html#pricing" class="nav-cta" data-lead="fun-with-ai" data-source="nav">Reserve a spot</a>
+      </div>
     </div>
   </nav>
 
@@ -271,7 +295,7 @@
     <div class="hero">
       <span class="hero-badge">🟣 Example Creation</span>
       <h1 class="hero-title">Meet Papaya on Vacation</h1>
-      <p class="hero-sub">One character. Six creations. All made with AI in 6 days.</p>
+      <p class="hero-sub">One character. Six creations. All made with AI.</p>
       <div class="hero-img">
         <img src="Papaya/1-Character.png" alt="Papaya character" />
       </div>
@@ -284,7 +308,7 @@
       <div class="tile-header">
         <span class="tile-emoji">📖</span>
         <div>
-          <div class="tile-day">Day 2 · Story</div>
+          <div class="tile-day">Story</div>
           <div class="tile-name">Papaya's Storybook</div>
         </div>
       </div>
@@ -305,7 +329,7 @@
       <div class="tile-header">
         <span class="tile-emoji">💥</span>
         <div>
-          <div class="tile-day">Day 3 · Comic</div>
+          <div class="tile-day">Comic</div>
           <div class="tile-name">Papaya's Comic</div>
         </div>
       </div>
@@ -319,7 +343,7 @@
       <div class="tile-header">
         <span class="tile-emoji">🤲</span>
         <div>
-          <div class="tile-day">Day 4 · Finger Puppet</div>
+          <div class="tile-day">Finger Puppet</div>
           <div class="tile-name">Papaya Finger Puppet</div>
         </div>
       </div>
@@ -340,7 +364,7 @@
       <div class="tile-header">
         <span class="tile-emoji">🎵</span>
         <div>
-          <div class="tile-day">Day 5 · Song</div>
+          <div class="tile-day">Song</div>
           <div class="tile-name">Papaya's Theme Song</div>
         </div>
       </div>
@@ -354,7 +378,7 @@
       <div class="tile-header">
         <span class="tile-emoji">🎮</span>
         <div>
-          <div class="tile-day">Day 6 · Game</div>
+          <div class="tile-day">Game</div>
           <div class="tile-name">Fruit Match</div>
         </div>
       </div>
@@ -376,9 +400,15 @@
     <!-- CTA -->
     <div class="cta-box">
       <p class="cta-title">Your child could create all of this.</p>
-      <p class="cta-sub">6 days. ₹500. One character → six creations.</p>
-      <a href="index.html#pricing" class="btn">
-        Book Their Spot
+      <p class="cta-sub">One character → six creations.</p>
+      <div class="offer">
+        <span class="price" data-fw="price" data-product="fun-with-ai" data-fw-hide-empty></span>
+        <span class="price-old" data-fw="priceOld" data-product="fun-with-ai" data-fw-hide-empty></span>
+        <span class="chip" data-fw="nextBatch" data-product="fun-with-ai" data-fw-hide-empty></span>
+        <span class="chip" data-fw="seats" data-product="fun-with-ai" data-fw-hide-empty></span>
+      </div>
+      <a href="fun-with-ai.html#pricing" class="btn" data-lead="fun-with-ai" data-source="showcase">
+        <span data-fw="cta" data-product="fun-with-ai">Book their spot</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
       </a>
     </div>
@@ -386,9 +416,19 @@
   </div>
 
   <footer class="footer">
-    <div style="margin-bottom:12px;"><img src="Logo-2.png" alt="Fidgital World" class="footer-logo" /></div>
+    <div class="footer-logo-wrap"><img src="Logo-2.png" alt="Fidgital World" class="footer-logo" /></div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="index.html#programs">AI Programs</a>
+      <a href="fun-with-ai.html">Fun with AI</a>
+      <a href="learn-with-ai.html">Learn with AI</a>
+      <a href="play.html">Play Kit</a>
+      <a href="ai-survival-guide.html">Free AI Safety Chat</a>
+    </nav>
     <div class="footer-copy">© 2026 Fidgital World · All rights reserved</div>
   </footer>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/site.js" defer></script>
 
 </body>
 </html>
