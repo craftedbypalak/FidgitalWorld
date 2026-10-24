@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fidgital Play Kit | Build It by Hand, Play It on Screen</title>
+  <meta name="description" content="Fidgital Play is a hands-on game for kids and families: a 5×5 board and fidget cubes, with an online game that sets the puzzles, runs the timer and cheers every build. Play alone or in a pair." />
+  <meta name="keywords" content="Fidgital Play, kids puzzle game, fidget cubes, 5x5 board game, hands-on game for kids, screen time with a purpose, spatial thinking game, family game India" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Fidgital World" />
+  <link rel="canonical" href="https://www.fidgitalworld.com/play.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fidgital Play Kit | Build It by Hand, Play It on Screen" />
+  <meta property="og:description" content="A 5×5 board and fidget cubes, plus an online game that sets the puzzle and the timer. Kids build it with their hands, then check the answer and earn stars." />
+  <meta property="og:url" content="https://www.fidgitalworld.com/play.html" />
+  <meta property="og:site_name" content="Fidgital World" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:image" content="https://www.fidgitalworld.com/img/play/board.png" />
+  <meta property="og:image:width" content="720" />
+  <meta property="og:image:height" content="654" />
+  <meta property="og:image:alt" content="The Fidgital Play board with stacked fidget cubes" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fidgital Play Kit | Build It by Hand, Play It on Screen" />
+  <meta name="twitter:description" content="A 5×5 board and fidget cubes with an online game. Hands-on screen time kids actually enjoy." />
+  <meta name="twitter:image" content="https://www.fidgitalworld.com/img/play/board.png" />
+
+  <!-- Structured Data: Product (no price or availability here, those live in js/site-config.js) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Fidgital Play kit",
+    "description": "A hands-on game with a 5×5 board and fidget cubes, plus a card with a kit code that opens the online companion game. The game shows a puzzle and a timer, kids build it with the cubes, then check their answer and earn stars. Single player and two-player modes.",
+    "image": "https://www.fidgitalworld.com/img/play/board.png",
+    "url": "https://www.fidgitalworld.com/play.html",
+    "brand": { "@type": "Brand", "name": "Fidgital World" }
+  }
+  </script>
+
+  <!-- Structured Data: FAQ (keep in sync with the visible FAQ) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Where do I find the kit code?", "acceptedAnswer": { "@type": "Answer", "text": "On the card in your box. Open the online game, type the code in, and you are ready to play. Capital letters, small letters and dashes all work." } },
+      { "@type": "Question", "name": "Which device should we use?", "acceptedAnswer": { "@type": "Answer", "text": "A tablet works best, because the game is laid out for a tablet screen. A laptop or a phone works too." } },
+      { "@type": "Question", "name": "Does the game need internet?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You need internet to load the game. The board and cubes are right there on your table." } },
+      { "@type": "Question", "name": "Can we use one kit on more than one device?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Enter the same code on each device. Levels and stars are saved on the device you play on." } },
+      { "@type": "Question", "name": "Which age is it for?", "acceptedAnswer": { "@type": "Answer", "text": "Fidgital Play is made for kids to build and play, and it is just as much fun as a family game." } },
+      { "@type": "Question", "name": "Can two people play together?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Dual Player has two modes. In Race, both players build the same puzzle at the same time. In Take Turns, one player builds while the other watches, then you swap." } },
+      { "@type": "Question", "name": "What happens if my child does not get a puzzle right?", "acceptedAnswer": { "@type": "Answer", "text": "Nothing scary. The game says things like So close! Try again! and moves on to the next puzzle. It is built to be encouraging, never to make a child feel they failed." } }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.fidgitalworld.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Fidgital Play kit", "item": "https://www.fidgitalworld.com/play.html" }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --warm-bg: #FFFDF0;
+      --cool-bg: #E8F4FA;
+      --gold: #FAE0A0;
+      --gold-dark: #E8A838;
+      --teal: #2A96C0;
+      --teal-deep: #1C7499;
+      --dark: #2D3436;
+      --body: #4A4A4A;
+      --muted: #7A7A72;
+      --white: #fff;
+      --border: #e8e4dc;
+      --radius: 12px;
+      --radius-lg: 16px;
+      --green: #4B7B3B;
+    }
+
+    [hidden] { display: none !important; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; border-radius: 6px; }
+
+    /* ── Nav ── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      background: rgba(255,253,240,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto;
+      padding: 0 16px; height: 60px;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; }
+    .nav-logo-img { height: 44px; width: auto; }
+    .nav-right { display: flex; align-items: center; gap: 22px; }
+    .nav-link { display: none; font-size: 15px; font-weight: 600; color: var(--dark); text-decoration: none; }
+    .nav-link:hover, .nav-link[aria-current="page"] { color: var(--teal-deep); }
+    .nav-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      background: var(--gold-dark); color: var(--dark);
+      font-family: inherit; font-size: 14px; font-weight: 700; text-decoration: none;
+      padding: 10px 20px; border-radius: 50px; border: none; cursor: pointer; white-space: nowrap;
+    }
+    .nav-pill:hover { filter: brightness(1.05); }
+    @media (min-width: 640px) { .nav-link { display: inline; } }
+
+    /* ── Sections ── */
+    .section { padding: 48px 16px; }
+    .section-warm { background: var(--warm-bg); }
+    .section-cool { background: var(--cool-bg); }
+    .section-inner { max-width: 800px; margin: 0 auto; }
+    .section-wide { max-width: 1060px; margin: 0 auto; }
+    .section-head { text-align: center; max-width: 620px; margin: 0 auto 32px; }
+    .eyebrow { display: inline-flex; padding: 4px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; background: var(--gold); color: var(--dark); margin-bottom: 12px; }
+    .heading-xl { font-size: clamp(32px, 8vw, 56px); font-weight: 800; line-height: 1.1; color: var(--dark); }
+    .heading-lg { font-size: clamp(25px, 6vw, 38px); font-weight: 800; line-height: 1.15; color: var(--dark); }
+    .text-teal { color: var(--teal-deep); }
+    .text-gold { color: var(--gold-dark); }
+    .lede { font-size: 16px; font-weight: 500; line-height: 1.65; color: var(--body); }
+    .section-head .lede { margin-top: 10px; }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 14px 28px; border-radius: 50px; font-family: inherit; font-size: 16px; font-weight: 700;
+      text-decoration: none; border: none; cursor: pointer; transition: all 0.15s; text-align: center;
+    }
+    .btn:hover { filter: brightness(1.05); transform: translateY(-1px); }
+    .btn-primary { background: var(--gold-dark); color: var(--dark); }
+    .btn-dark { background: var(--dark); color: #fff; }
+    .btn-block { width: 100%; }
+    .link-arrow { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; font-size: 15px; color: var(--teal-deep); text-decoration: none; padding: 8px 2px; }
+    .link-arrow:hover { text-decoration: underline; }
+
+    /* ── Hero ── */
+    .hero { padding-top: 96px; padding-bottom: 40px; overflow: hidden; }
+    .hero-grid { max-width: 1060px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 28px; align-items: center; }
+    .hero-copy .eyebrow { margin-bottom: 14px; }
+    .hero h1 { margin-bottom: 14px; }
+    .hero h1 span { display: block; }
+    .hero .lede { max-width: 520px; }
+    .facts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 18px 0 0; }
+    .fact-pill { display: inline-flex; align-items: center; background: #fff; border: 1px solid #e0dccf; color: var(--dark); padding: 6px 14px; border-radius: 50px; font-size: 13px; font-weight: 700; }
+    .fact-pill.hot { background: var(--gold); border-color: var(--gold-dark); }
+    .price-now { font-size: 26px; font-weight: 800; color: var(--dark); }
+    .price-old { font-size: 16px; font-weight: 600; color: var(--muted); text-decoration: line-through; }
+    .status-note { margin-top: 10px; font-size: 14px; font-weight: 600; color: var(--body); }
+    .hero-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin-top: 20px; }
+    .hero-actions .btn { width: 100%; }
+    .hero-actions .link-arrow { align-self: center; }
+
+    .hero-visual { position: relative; max-width: 440px; width: 100%; margin: 0 auto; padding: 0 0 8px; }
+    .hero-visual::before { content: ""; position: absolute; inset: 6% 2% 4% 2%; background: var(--gold); border-radius: 50% 46% 52% 48% / 48% 52% 46% 50%; opacity: .55; z-index: 0; }
+    .hero-board { position: relative; z-index: 1; width: 100%; height: auto; filter: drop-shadow(0 18px 24px rgba(45,52,54,.18)); }
+    .hero-cube { position: absolute; z-index: 2; width: 38%; height: auto; right: -2%; bottom: -4%; filter: drop-shadow(0 12px 16px rgba(45,52,54,.22)); transform: rotate(-6deg); }
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-cube { animation: bob 5s ease-in-out infinite; }
+      @keyframes bob { 0%,100% { transform: rotate(-6deg) translateY(0); } 50% { transform: rotate(-3deg) translateY(-8px); } }
+    }
+
+    /* ── Steps ── */
+    .steps { display: grid; grid-template-columns: 1fr; gap: 16px; max-width: 1060px; margin: 0 auto; }
+    .step { background: var(--warm-bg); border: 1.5px solid var(--border); border-radius: var(--radius-lg); padding: 24px 22px; }
+    .step-num { width: 44px; height: 44px; border-radius: 50%; background: var(--gold-dark); color: var(--dark); font-size: 20px; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+    .step h3 { font-size: 19px; font-weight: 800; margin-bottom: 6px; }
+    .step p { font-size: 15px; font-weight: 500; line-height: 1.6; color: var(--body); }
+
+    /* ── Screenshots in a tablet frame ── */
+    .shots { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 14px; max-width: 1060px; margin: 0 auto; }
+    .shot { margin: 0; grid-column: span 1; }
+    .shot.big { grid-column: 1 / -1; }
+    .device { background: var(--dark); border-radius: 18px; padding: 7px; box-shadow: 0 14px 30px rgba(45,52,54,.18); }
+    .device img { width: 100%; height: auto; border-radius: 11px; background: #FCF0DD; }
+    .shot figcaption { padding: 10px 4px 0; font-size: 13px; line-height: 1.5; color: var(--body); font-weight: 500; }
+    .shot figcaption strong { display: block; font-size: 15px; font-weight: 800; color: var(--dark); margin-bottom: 2px; }
+    .shots-note { text-align: center; font-size: 13px; color: var(--muted); font-weight: 500; margin-top: 22px; }
+
+    /* ── Ways to play ── */
+    .modes { display: grid; grid-template-columns: 1fr; gap: 16px; max-width: 1060px; margin: 0 auto; }
+    .mode { background: #fff; border: 2px solid var(--gold); border-radius: var(--radius-lg); padding: 26px 22px; display: flex; flex-direction: column; }
+    .mode.teal { border-color: var(--teal); }
+    .mode-kicker { font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 6px; }
+    .mode.teal .mode-kicker { color: var(--teal-deep); }
+    .mode h3 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+    .mode p { font-size: 15px; font-weight: 500; line-height: 1.6; color: var(--body); }
+    .mode ul { list-style: none; margin-top: 12px; display: grid; gap: 8px; }
+    .mode li { position: relative; padding-left: 22px; font-size: 15px; font-weight: 500; line-height: 1.55; color: var(--body); }
+    .mode li::before { content: ""; position: absolute; left: 2px; top: 8px; width: 9px; height: 9px; border-radius: 3px; background: var(--gold-dark); }
+    .mode.teal li::before { background: var(--teal); }
+    .mode li strong { color: var(--dark); }
+    .learn-strip { max-width: 1060px; margin: 16px auto 0; background: #fff; border: 1.5px dashed var(--gold-dark); border-radius: var(--radius-lg); padding: 16px 20px; font-size: 15px; font-weight: 500; line-height: 1.6; color: var(--body); }
+    .learn-strip strong { color: var(--dark); }
+
+    /* ── In the box ── */
+    .box-grid { display: grid; grid-template-columns: 1fr; gap: 16px; max-width: 1060px; margin: 0 auto; }
+    .box-item { background: var(--warm-bg); border: 1.5px solid var(--border); border-radius: var(--radius-lg); padding: 22px; text-align: center; display: flex; flex-direction: column; align-items: center; }
+    .box-art { height: 150px; width: 100%; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+    .box-art img { max-height: 150px; width: auto; max-width: 78%; object-fit: contain; filter: drop-shadow(0 10px 14px rgba(45,52,54,.16)); }
+    .box-item h3 { font-size: 19px; font-weight: 800; margin-bottom: 6px; }
+    .box-item p { font-size: 15px; font-weight: 500; line-height: 1.6; color: var(--body); }
+    .code-card { background: #fff; border: 1px solid #d9d4c6; border-top: 12px solid var(--gold-dark); border-radius: 10px; padding: 12px 20px 14px; transform: rotate(-3deg); box-shadow: 0 10px 18px rgba(45,52,54,.14); }
+    .code-card small { display: block; font-size: 10px; font-weight: 800; letter-spacing: .14em; color: #8F1C2E; }
+    .code-card b { display: block; font-size: 20px; font-weight: 800; letter-spacing: .06em; color: var(--dark); margin-top: 2px; }
+    .box-foot { text-align: center; max-width: 620px; margin: 22px auto 0; font-size: 15px; font-weight: 500; line-height: 1.6; color: var(--body); }
+
+    /* ── Why parents like it ── */
+    .why-grid { display: grid; grid-template-columns: 1fr; gap: 14px; max-width: 1060px; margin: 0 auto; }
+    .why { background: #fff; border-radius: var(--radius-lg); padding: 22px; border: 1.5px solid transparent; }
+    .why-icon { width: 46px; height: 46px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 12px; }
+    .why h3 { font-size: 18px; font-weight: 800; margin-bottom: 6px; }
+    .why p { font-size: 15px; font-weight: 500; line-height: 1.6; color: var(--body); }
+
+    /* ── Proof (filled from config, hidden while empty) ── */
+    .proof-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 16px; max-width: 800px; margin: 0 auto 24px; }
+    .proof-quotes { display: grid; grid-template-columns: 1fr; gap: 14px; max-width: 1060px; margin: 0 auto; }
+
+    /* ── Buy box ── */
+    .buy-card { max-width: 860px; margin: 0 auto; background: #fff; border: 2px solid var(--gold-dark); border-radius: 22px; overflow: hidden; display: grid; grid-template-columns: 1fr; box-shadow: 0 16px 40px rgba(45,52,54,.1); }
+    .buy-art { background: linear-gradient(180deg, #FFF6DF 0%, #FAE0A0 100%); padding: 28px 20px 20px; display: flex; align-items: center; justify-content: center; }
+    .buy-art img { width: 70%; max-width: 280px; height: auto; filter: drop-shadow(0 14px 18px rgba(45,52,54,.2)); }
+    .buy-body { padding: 26px 22px 26px; }
+    .buy-body h2 { font-size: 26px; font-weight: 800; line-height: 1.15; margin-bottom: 6px; }
+    .buy-body .sub { font-size: 15px; font-weight: 500; line-height: 1.6; color: var(--body); }
+    .buy-list { list-style: none; margin: 14px 0 0; display: grid; gap: 7px; }
+    .buy-list li { position: relative; padding-left: 26px; font-size: 15px; font-weight: 600; color: var(--dark); }
+    .buy-list li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--green); font-weight: 800; }
+    .buy-price { margin-top: 18px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+    .buy-price .price-now { font-size: 32px; }
+    .buy-note { margin-top: 10px; font-size: 14px; font-weight: 600; line-height: 1.5; color: var(--body); }
+    .buy-body .btn { margin-top: 18px; }
+    .buy-body .link-arrow { margin-top: 10px; }
+    .buy-fine { margin-top: 12px; font-size: 13px; font-weight: 500; color: var(--muted); line-height: 1.5; }
+
+    /* ── FAQ ── */
+    .faq-item { background: #fff; border: 1.5px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 10px; }
+    .faq-item summary { list-style: none; cursor: pointer; padding: 16px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 15px; font-weight: 700; color: var(--dark); }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-arrow { width: 16px; height: 16px; color: #b5b5b5; transition: transform .2s; flex-shrink: 0; }
+    .faq-item[open] { border-color: var(--teal); }
+    .faq-item[open] .faq-arrow { transform: rotate(90deg); color: var(--teal); }
+    .faq-a { padding: 0 18px 16px; font-size: 15px; font-weight: 500; line-height: 1.65; color: var(--body); }
+    .faq-a strong { display: block; color: var(--dark); margin-bottom: 4px; }
+    .faq-a a { color: var(--teal-deep); font-weight: 700; }
+
+    /* ── Final CTA ── */
+    .final { text-align: center; }
+    .final .lede { max-width: 520px; margin: 10px auto 22px; }
+    .final-actions { display: flex; flex-direction: column; align-items: center; gap: 8px; max-width: 360px; margin: 0 auto; }
+    .final-actions .btn { width: 100%; }
+
+    /* ── Footer ── */
+    .footer { padding: 32px 16px 36px; background: var(--gold); text-align: center; }
+    .footer-logo { height: 80px; width: auto; margin: 0 auto 14px; border-radius: 8px; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px; margin-bottom: 14px; }
+    .footer-links a { font-size: 14px; font-weight: 600; color: var(--dark); text-decoration: none; padding: 6px 2px; }
+    .footer-links a:hover { text-decoration: underline; }
+    .footer-copy { color: var(--dark); font-size: 12px; }
+
+    /* ── Sticky CTA (phones) ── */
+    .sticky-cta {
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+      padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+      background: rgba(255,253,240,.96); backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(0,0,0,.08);
+      transform: translateY(110%); transition: transform .25s ease;
+    }
+    .sticky-cta.show { transform: translateY(0); }
+    .sticky-cta .btn { width: 100%; padding: 13px 20px; }
+    @media (max-width: 767px) { body { padding-bottom: 0; } .footer { padding-bottom: 84px; } }
+    @media (min-width: 768px) { .sticky-cta { display: none; } }
+
+    /* ── Tablet (768px+) ── */
+    @media (min-width: 768px) {
+      .nav-inner { height: 72px; padding: 0 24px; }
+      .nav-logo-img { height: 56px; }
+      .section { padding: 64px 24px; }
+      .lede { font-size: 18px; }
+      .hero { padding-top: 116px; padding-bottom: 56px; }
+      .hero-actions { flex-direction: row; align-items: center; gap: 18px; flex-wrap: wrap; }
+      .hero-actions .btn { width: auto; }
+      .steps { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+      .shots { grid-template-columns: repeat(6, 1fr); gap: 28px 22px; }
+      .shot { grid-column: span 2; }
+      .shot.big { grid-column: span 3; }
+      .device { border-radius: 24px; padding: 10px; }
+      .device img { border-radius: 14px; }
+      .modes { grid-template-columns: repeat(3, 1fr); }
+        .box-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+      .why-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+      .proof-quotes { grid-template-columns: repeat(2, 1fr); }
+      .buy-card { grid-template-columns: 5fr 7fr; }
+      .buy-art { padding: 32px; }
+      .buy-body { padding: 36px 34px; }
+      .faq-item summary { font-size: 17px; padding: 18px 22px; }
+      .faq-a { font-size: 16px; padding: 0 22px 20px; }
+      .footer { padding: 40px 24px 44px; }
+      .footer-logo { height: 100px; }
+    }
+
+    /* ── Desktop (1024px+) ── */
+    @media (min-width: 1024px) {
+      .nav-inner { height: 88px; padding: 0 40px; }
+      .nav-logo-img { height: 68px; }
+      .section { padding: 80px 40px; }
+      .hero { padding-top: 140px; padding-bottom: 72px; }
+      .hero-grid { grid-template-columns: 1.1fr .9fr; gap: 48px; }
+      .why-grid { grid-template-columns: repeat(4, 1fr); }
+      .proof-quotes { grid-template-columns: repeat(3, 1fr); }
+      .footer-logo { height: 110px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="Logo-1.png" alt="Fidgital World" class="nav-logo-img" /></a>
+      <div class="nav-right">
+        <a href="index.html#programs" class="nav-link">AI Programs</a>
+        <a href="play.html" class="nav-link" aria-current="page">Play Kit</a>
+        <a href="#buy" class="nav-pill" data-lead="play-kit" data-source="nav">Get the kit</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+  <!-- Hero -->
+  <section class="section section-warm hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Fidgital Play kit</span>
+        <h1 class="heading-xl">
+          <span class="text-gold">Build it with your hands.</span>
+          <span class="text-teal">Play it on screen.</span>
+        </h1>
+        <p class="lede">A 5×5 board and fidget cubes, with an online game that shows the puzzle and runs the timer. Your child builds it for real, then checks the answer and earns stars. Screen time that ends with something in their hands.</p>
+
+        <div class="facts">
+          <span class="fact-pill" data-fw="age" data-product="play-kit" data-fw-hide-empty hidden></span>
+          <span class="price-now" data-fw="price" data-product="play-kit" data-fw-hide-empty hidden></span>
+          <span class="price-old" data-fw="priceOld" data-product="play-kit" data-fw-hide-empty hidden></span>
+          <span class="fact-pill hot" data-fw="seats" data-product="play-kit" data-fw-hide-empty hidden></span>
+        </div>
+        <p class="status-note" data-fw-status="play-kit:preorder" hidden>Pre-orders are open. <span data-fw="nextBatch" data-product="play-kit" data-fw-hide-empty hidden></span></p>
+
+        <div class="hero-actions">
+          <a href="#buy" class="btn btn-primary" data-lead="play-kit" data-source="hero"><span data-fw="cta" data-product="play-kit">Get the kit</span></a>
+          <a href="https://play.fidgitalworld.com/" class="link-arrow" data-play-link>Already have a kit? Play online →</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img class="hero-board" src="img/play/board.webp" width="720" height="654" alt="The Fidgital Play 5×5 board with stacked fidget cubes" fetchpriority="high" />
+        <img class="hero-cube" src="img/play/cube.webp" width="720" height="547" alt="A block of golden fidget cubes" />
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section" id="how">
+    <div class="section-head">
+      <span class="eyebrow">How it works</span>
+      <h2 class="heading-lg">Three simple steps, over and over</h2>
+      <p class="lede">The screen sets the challenge. The real fun happens on the table.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Pick a puzzle on screen</h3>
+        <p>Choose a level and the game shows a pattern on a 5×5 grid. That is what your child will build.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Build it with the cubes</h3>
+        <p>Copy the pattern on the physical board with the fidget cubes, before the timer runs out.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Check it and earn stars</h3>
+        <p>The game reveals the answer. Your child compares, taps "I got it!" or "Not quite", and collects stars as they go.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="section section-cool" id="game">
+    <div class="section-head">
+      <span class="eyebrow">The online game</span>
+      <h2 class="heading-lg">A peek at the game</h2>
+      <p class="lede">Bright, simple and made for a tablet, so little hands can tap along while the cubes do the real work.</p>
+    </div>
+    <div class="shots">
+      <figure class="shot big">
+        <div class="device"><img src="img/play/game-puzzle.webp" width="1000" height="698" alt="Game screen showing a 5×5 puzzle pattern with the timer counting down and a green Done button" loading="lazy" /></div>
+        <figcaption><strong>Beat the timer</strong>A pattern appears and the clock starts. Tap Done! when the build is finished.</figcaption>
+      </figure>
+      <figure class="shot big">
+        <div class="device"><img src="img/play/game-answer.webp" width="1000" height="698" alt="Game screen revealing the answer pattern with the buttons I got it and Not quite" loading="lazy" /></div>
+        <figcaption><strong>Check the answer</strong>The answer is revealed and your child decides how it went. No wrong answers, just another go.</figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="device"><img src="img/play/game-home.webp" width="1000" height="698" alt="Game home screen with Play, Levels, Learn to Play and Exit buttons" loading="lazy" /></div>
+        <figcaption><strong>Easy to start</strong>Big friendly buttons, nothing to set up.</figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="device"><img src="img/play/game-levels.webp" width="1000" height="698" alt="Level map showing levels with stars earned" loading="lazy" /></div>
+        <figcaption><strong>Levels and stars</strong>Clear a level to unlock the next one.</figcaption>
+      </figure>
+      <figure class="shot">
+        <div class="device"><img src="img/play/game-race.webp" width="1000" height="698" alt="Two-player Race screen with one panel for each player and a shared puzzle in the middle" loading="lazy" /></div>
+        <figcaption><strong>Two-player Race</strong>The tablet lies flat, one panel for each player.</figcaption>
+      </figure>
+    </div>
+    <p class="shots-note">Screens from the game. The puzzles shown are samples.</p>
+  </section>
+
+  <!-- Ways to play -->
+  <section class="section section-warm" id="modes">
+    <div class="section-head">
+      <span class="eyebrow">Ways to play</span>
+      <h2 class="heading-lg">Alone, or side by side</h2>
+      <p class="lede">Play solo to level up, or bring a sibling or a parent into the game.</p>
+    </div>
+    <div class="modes">
+      <div class="mode">
+        <div class="mode-kicker">Single player</div>
+        <h3>Level up with stars</h3>
+        <p>Pick a level, build each puzzle, and collect up to three stars.</p>
+        <ul>
+          <li>Clear a level to unlock the next one.</li>
+          <li>Your best result is saved on the device.</li>
+          <li>Play again any time to earn more stars.</li>
+        </ul>
+      </div>
+      <div class="mode">
+        <div class="mode-kicker">Dual player</div>
+        <h3>Race</h3>
+        <p>Both players get the same puzzle and the same timer, and build at the same time.</p>
+        <ul>
+          <li>Each player builds on their own set.</li>
+          <li>Each correct build scores a point, and the first correct Done! earns a speed point too.</li>
+          <li>Everyone gets cheered at the end, even in a tie.</li>
+        </ul>
+      </div>
+      <div class="mode teal">
+        <div class="mode-kicker">Dual player</div>
+        <h3>Take Turns</h3>
+        <p>One set of cubes, shared. One player builds while the other watches and cheers.</p>
+        <ul>
+          <li>The watcher sees the answer and marks the build.</li>
+          <li>Then you swap, with a brand new puzzle.</li>
+          <li>Perfect for a parent and child, or two siblings.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="learn-strip"><strong>New to fidget cubes?</strong> Learn to Play is a short, friendly guide inside the game that shows kids how the cubes and the board work before their first puzzle.</p>
+  </section>
+
+  <!-- In the box -->
+  <section class="section" id="box">
+    <div class="section-head">
+      <span class="eyebrow">What's in the box</span>
+      <h2 class="heading-lg">Everything you need to start</h2>
+    </div>
+    <div class="box-grid">
+      <div class="box-item">
+        <div class="box-art"><img src="img/play/board.webp" width="720" height="654" alt="The 5×5 board" loading="lazy" /></div>
+        <h3>A 5×5 board</h3>
+        <p>The playing space where every puzzle comes to life.</p>
+      </div>
+      <div class="box-item">
+        <div class="box-art"><img src="img/play/cube.webp" width="720" height="547" alt="Fidget cubes" loading="lazy" /></div>
+        <h3>Fidget cubes</h3>
+        <p>Satisfying to hold and fun to build with. They are the pieces your child uses to copy each puzzle.</p>
+      </div>
+      <div class="box-item">
+        <div class="box-art"><div class="code-card" aria-hidden="true"><small>YOUR KIT CODE</small><b>FW-XXXXX-XXXXX</b></div></div>
+        <h3>A card with your kit code</h3>
+        <p>Type the code into the online game and it opens, ready to play.</p>
+      </div>
+    </div>
+    <p class="box-foot">The online game is included with your kit. Open it on a tablet, laptop or phone, enter your code, and play.</p>
+  </section>
+
+  <!-- Why parents like it -->
+  <section class="section section-cool" id="why">
+    <div class="section-head">
+      <span class="eyebrow">Why parents like it</span>
+      <h2 class="heading-lg">Screen time with something to show for it</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why">
+        <div class="why-icon" aria-hidden="true">🤲</div>
+        <h3>Hands-on screen time</h3>
+        <p>The screen gives the challenge, and the building happens in your child's hands.</p>
+      </div>
+      <div class="why">
+        <div class="why-icon" aria-hidden="true">🧩</div>
+        <h3>Spatial thinking</h3>
+        <p>Turning a flat picture into a real build is lovely practice in seeing shapes and patterns.</p>
+      </div>
+      <div class="why">
+        <div class="why-icon" aria-hidden="true">🎯</div>
+        <h3>Focus</h3>
+        <p>A short timer gives a clear goal, and "So close! Try again!" keeps it encouraging.</p>
+      </div>
+      <div class="why">
+        <div class="why-icon" aria-hidden="true">👨‍👩‍👧</div>
+        <h3>Playing together</h3>
+        <p>Two-player modes make it easy for siblings, or a parent and child, to play side by side.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proof (shows only when the owner adds real quotes or numbers in js/site-config.js) -->
+  <section class="section" data-fw-needs="testimonials" hidden>
+    <div class="section-head">
+      <span class="eyebrow">From families</span>
+      <h2 class="heading-lg">What parents say</h2>
+    </div>
+    <div class="proof-quotes" data-fw-testimonials></div>
+  </section>
+  <section class="section section-warm" data-fw-needs="stats" hidden>
+    <div class="proof-stats" data-fw-stats></div>
+  </section>
+
+  <!-- Buy box -->
+  <section class="section section-warm" id="buy">
+    <div class="section-head">
+      <span class="eyebrow">Get your kit</span>
+      <h2 class="heading-lg">Ready to play?</h2>
+    </div>
+    <div class="buy-card">
+      <div class="buy-art"><img src="img/play/board.webp" width="720" height="654" alt="The Fidgital Play board" loading="lazy" /></div>
+      <div class="buy-body">
+        <h2>Fidgital Play kit</h2>
+        <p class="sub">A hands-on game for your table, with an online game to play along.</p>
+        <ul class="buy-list">
+          <li>A 5×5 board and fidget cubes</li>
+          <li>A card with your kit code for the online game</li>
+          <li>Single player and two-player modes</li>
+        </ul>
+
+        <div class="buy-price">
+          <span class="price-now" data-fw="price" data-product="play-kit" data-fw-hide-empty hidden></span>
+          <span class="price-old" data-fw="priceOld" data-product="play-kit" data-fw-hide-empty hidden></span>
+          <span class="fact-pill" data-fw="age" data-product="play-kit" data-fw-hide-empty hidden></span>
+          <span class="fact-pill hot" data-fw="seats" data-product="play-kit" data-fw-hide-empty hidden></span>
+        </div>
+
+        <p class="buy-note" data-fw-status="play-kit:open" hidden>Reserve your kit with a quick form. We will message you on WhatsApp with what happens next.</p>
+        <p class="buy-note" data-fw-status="play-kit:preorder" hidden>Pre-orders are open. <span data-fw="nextBatch" data-product="play-kit" data-fw-hide-empty hidden></span> We will message you on WhatsApp with the details.</p>
+        <p class="buy-note" data-fw-status="play-kit:waitlist,soldout" hidden>Join the list and we will message you on WhatsApp when the next kits are ready.</p>
+
+        <a href="#buy" class="btn btn-primary btn-block" data-lead="play-kit" data-source="pricing"><span data-fw="cta" data-product="play-kit">Get the kit</span></a>
+        <a href="https://play.fidgitalworld.com/" class="link-arrow" data-play-link>Already have a kit? Play online →</a>
+        <p class="buy-fine">Quick form, no account needed. Questions? We are happy to help on WhatsApp.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="section-inner" style="max-width:720px;">
+      <h2 class="heading-lg" style="text-align:center;margin-bottom:28px;">Questions parents ask</h2>
+
+      <details class="faq-item">
+        <summary>Where do I find the kit code?<svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9,18 15,12 9,6"/></svg></summary>
+        <div class="faq-a">On the card in your box. Open the online game, type the code in, and you are ready to play. Capital letters, small letters and dashes all work.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Which device should we use?<svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9,18 15,12 9,6"/></svg></summary>
+        <div class="faq-a">A tablet works best, because the game is laid out for a tablet screen. A laptop or a phone works too.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Does the game need internet?<svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9,18 15,12 9,6"/></svg></summary>
+        <div class="faq-a">Yes. You need internet to load the game. The board and cubes are right there on your table.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can we use one kit on more than one device?<svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9,18 15,12 9,6"/></svg></summary>
+        <div class="faq-a">Yes. Enter the same code on each device. Levels and stars are saved on the device you play on.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Which age is it for?<svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9,18 15,12 9,6"/></svg></summary>
+        <div class="faq-a"><strong data-fw="age" data-product="play-kit" data-fw-hide-empty hidden></strong>Fidgital Play is made for kids to build and play, and it is just as much fun as a family game.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can two people play together?<svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9,18 15,12 9,6"/></svg></summary>
+        <div class="faq-a">Yes. Dual Player has two modes. In Race, both players build the same puzzle at the same time. In Take Turns, one player builds while the other watches, then you swap.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What if my child does not get a puzzle right?<svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9,18 15,12 9,6"/></svg></summary>
+        <div class="faq-a">Nothing scary. The game says things like "So close! Try again!" and moves on to the next puzzle. It is built to be encouraging, never to make a child feel they failed.</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="section section-cool final">
+    <div class="section-inner">
+      <h2 class="heading-lg">Give them a game they can hold</h2>
+      <p class="lede">Build it with your hands. Play it on screen. Start the fun together.</p>
+      <div class="final-actions">
+        <a href="#buy" class="btn btn-primary" data-lead="play-kit" data-source="final"><span data-fw="cta" data-product="play-kit">Get the kit</span></a>
+        <a href="https://play.fidgitalworld.com/" class="link-arrow" data-play-link>Already have a kit? Play online →</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <img src="Logo-2.png" alt="Fidgital World" class="footer-logo" />
+    <nav class="footer-links" aria-label="Footer">
+      <a href="index.html#programs">AI Programs</a>
+      <a href="fun-with-ai.html">Fun with AI</a>
+      <a href="learn-with-ai.html">Learn with AI</a>
+      <a href="play.html">Play Kit</a>
+      <a href="ai-survival-guide.html">Free AI Safety Chat</a>
+    </nav>
+    <div class="footer-copy">© 2026 Fidgital World · All rights reserved</div>
+  </footer>
+
+  <!-- Sticky buy button on phones, shown once the hero button has scrolled away -->
+  <div class="sticky-cta" id="stickyCta" aria-hidden="true">
+    <a href="#buy" class="btn btn-primary" data-lead="play-kit" data-source="sticky" tabindex="-1"><span data-fw="cta" data-product="play-kit">Get the kit</span></a>
+  </div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/site.js" defer></script>
+  <script>
+    (function () {
+      // Point every "Play online" link at the game address from js/site-config.js.
+      var url = window.FW_SITE && window.FW_SITE.playUrl;
+      if (url) document.querySelectorAll("[data-play-link]").forEach(function (a) { a.href = url; });
+
+      // Sticky bar: visible after the hero button scrolls off, hidden while a buy section is on screen.
+      var bar = document.getElementById("stickyCta");
+      var heroBtn = document.querySelector(".hero-actions .btn");
+      var zones = [document.getElementById("buy"), document.querySelector(".final")];
+      var ticking = false;
+      function update() {
+        ticking = false;
+        var past = heroBtn && heroBtn.getBoundingClientRect().bottom < 0;
+        var vh = window.innerHeight;
+        var inZone = zones.some(function (z) { var r = z.getBoundingClientRect(); return r.top < vh * 0.7 && r.bottom > 0; });
+        var show = past && !inZone;
+        bar.classList.toggle("show", show);
+        bar.setAttribute("aria-hidden", show ? "false" : "true");
+        bar.querySelector("a").tabIndex = show ? 0 : -1;
+      }
+      window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+      window.addEventListener("resize", update);
+      update();
+    })();
+  </script>
+
+</body>
+</html>
