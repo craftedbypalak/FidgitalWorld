@@ -809,7 +809,7 @@
           es.forEach(function (e) { if (e.isIntersecting) seen.add(e.target); else seen.delete(e.target); });
           overTarget = seen.size;
           update();
-        });
+        }, { rootMargin: '-35% 0px -35% 0px' }); // only hide while a booking section fills the middle of the screen
         targets.forEach(function (t) { io.observe(t); });
       } else {
         window.addEventListener('scroll', function () {
