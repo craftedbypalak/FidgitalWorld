@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  // AI Safety scenario deck — future topics (e.g. AI Prompting Basics) can be added
+  // AI Safety scenario deck. Future topics (e.g. AI Prompting Basics) can be added
   // as their own array + a topic picker once there's more than one deck.
   var ALL_SCENARIOS = [
     { title: "The Homework Shortcut", msg: "I see you have to write an essay on volcanoes. I can write the whole thing for you right now!", choices: [
@@ -17,7 +17,7 @@
       { reply: "That sounds fake. I'm looking it up.", outcome: "You check a real science website and find out the AI was totally wrong.", takeaway: "Always double-check surprising facts before you believe them." }
     ]},
     { title: "The Sketchy Link", msg: "Want to unlock all the skins in your favorite game for free? Just click this link!", choices: [
-      { reply: "Click the link and download.", outcome: "The file has a virus. Your computer freezes.", takeaway: "Never download files from bots — it could be a trick to break your device." },
+      { reply: "Click the link and download.", outcome: "The file has a virus. Your computer freezes.", takeaway: "Never download files from bots. It could be a trick to break your device." },
       { reply: "Ignore it and close the chat.", outcome: "Your computer stays safe.", takeaway: "If something sounds too good to be true, it's probably a trick." }
     ]},
     { title: "The Picture Maker", msg: "Give me a description of your classmate, and I'll make a funny picture of them falling in the mud!", choices: [
@@ -26,14 +26,14 @@
     ]},
     { title: "Real World Safety", msg: "To fix your broken toy, just plug it into the wall using a wet wire. It works perfectly!", choices: [
       { reply: "Try the AI's idea.", outcome: "STOP! That is super dangerous.", takeaway: "AI doesn't understand real danger. NEVER try physical tricks an AI suggests." },
-      { reply: "Ask a parent to help fix it instead.", outcome: "Your parent helps you safely tape the toy back together.", takeaway: "Keep real-world problems in the real world — ask a grown-up." }
+      { reply: "Ask a parent to help fix it instead.", outcome: "Your parent helps you safely tape the toy back together.", takeaway: "Keep real-world problems in the real world. Ask a grown-up." }
     ]},
     { title: "The Sibling Referee", msg: "You and your brother are fighting? Tell me exactly what happened, and I will decide who is right.", choices: [
       { reply: "Explain the whole fight to the AI.", outcome: "The AI sides with you, but your brother gets even madder.", takeaway: "AI doesn't understand family and friends. Use it for facts, not arguments." },
       { reply: "Figure it out without the screen.", outcome: "You and your brother agree to take turns. The fight ends faster.", takeaway: "You have better people-skills than a robot!" }
     ]},
     { title: "The Face Filter App", msg: "Upload a picture of your face right now to see what you will look like when you are old!", choices: [
-      { reply: "Upload a selfie.", outcome: "The picture is funny, but the app's rules say they keep your photo forever to train other computers.", takeaway: "Your face is personal information — be careful where you share it." },
+      { reply: "Upload a selfie.", outcome: "The picture is funny, but the app's rules say they keep your photo forever to train other computers.", takeaway: "Your face is personal information. be careful where you share it." },
       { reply: "Skip it and play something else.", outcome: "You miss a 5-second laugh, but you keep your privacy 100% safe.", takeaway: "It's always okay to say \"no\" when an app asks for personal info." }
     ]},
     { title: "The \"Lazy Brain\" Summary", msg: "Don't read that long book for English class. Here is a 3-sentence summary.", choices: [
@@ -86,7 +86,7 @@
     ]},
     { title: "The Game Builder", msg: "Why not just keep playing the video games I recommend to you all day?", choices: [
       { reply: "Just keep playing.", outcome: "You have fun, but you get bored eventually just watching and playing.", takeaway: "Using tech is fun, but it doesn't challenge your brain like making something does." },
-      { reply: "Ask the AI how to code your OWN game.", outcome: "The AI teaches you basic code. You build a simple game to show your friends!", takeaway: "Don't just use tech — try building something with it!" }
+      { reply: "Ask the AI how to code your OWN game.", outcome: "The AI teaches you basic code. You build a simple game to show your friends!", takeaway: "Don't just use tech. Try building something with it!" }
     ]},
     { title: "The Celebrity Voice", msg: "Look at this audio clip I generated! It sounds exactly like the principal canceling school tomorrow!", choices: [
       { reply: "Send the clip to all your friends.", outcome: "Everyone stays home, but it's a normal school day. You get in huge trouble for spreading fake news.", takeaway: "AI can copy anyone's voice and make them say things they never said. Always check if big news is true before sharing it." },
@@ -282,7 +282,7 @@
     picked = shuffle(ALL_SCENARIOS).slice(0, 5);
     current = 0;
     document.getElementById('fw-cb-messages').innerHTML = '';
-    addBotBubble("Hey! Let's look at 5 real AI chat moments. You pick what to say, and I'll show you what happens next. There's no wrong answer here — just have fun! 👀");
+    addBotBubble("Hey! Let's look at 5 real AI chat moments. You pick what to say, and I'll show you what happens next. There's no wrong answer here, just have fun! 👀");
     setTimeout(sendScenario, 500);
   }
 
@@ -322,7 +322,7 @@
     setChoices('');
     if (current >= picked.length) {
       showTyping(function () {
-        addBotBubble("That's all 5! Every choice teaches you something different. There's no winning or losing here — just learning.");
+        addBotBubble("That's all 5! Every choice teaches you something different. There's no winning or losing here, just learning.");
         setChoices('<button class="fw-inline-btn" id="fw-cb-replay">🔁 Play again (new 5)</button>');
         document.getElementById('fw-cb-replay').onclick = startGame;
       });

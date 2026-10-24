@@ -131,6 +131,7 @@
   /* ── Lead form ────────────────────────────────────────── */
 
   const CSS = `
+  [hidden]{display:none!important}
   .fwl-backdrop,.fwl-backdrop *{box-sizing:border-box}
   .fwl-backdrop{position:fixed;inset:0;z-index:1000;background:rgba(45,52,54,.55);display:flex;align-items:flex-end;justify-content:center;padding:0;font-family:'DM Sans',sans-serif}
   @media(min-width:560px){.fwl-backdrop{align-items:center;padding:16px}}
