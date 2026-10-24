@@ -8,13 +8,13 @@
   <meta name="keywords" content="AI workshop for kids, AI creativity course for children, learn AI for kids, kids AI camp India, AI summer camp 2026, creative AI workshop, children AI education, STEM for kids, AI storytelling for kids, AI game making for kids, AI music for kids, online AI workshop India, Fidgital World, AI classes for 10 year olds, kids coding alternative, creative technology kids, generative AI for children, AI art for kids, future skills kids, Suno AI music kids, Gemini AI for kids, ChatGPT for kids, AI character design kids, AI comic creation, AI storybook maker, AI song generator kids, AI game builder no code, paper puppet design, finger puppet craft AI, digital to physical craft, prompt engineering for kids, AI tools for children, kids creative AI camp, live online AI class India, AI workshop for beginners, teach kids AI, AI learning for tweens, AI project based learning kids, AI curriculum for kids, how to teach AI to children, best AI course for kids India, AI creativity camp online, kids build with AI, children learn generative AI, AI education India, Bolt AI game maker, Suno music maker, Gemini image generation, AI illustration kids, no code game development kids, interactive AI learning" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Fidgital World" />
-  <link rel="canonical" href="https://fidgitalworld.com/fun-with-ai.html" />
+  <link rel="canonical" href="https://www.fidgitalworld.com/fun-with-ai.html" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Fidgital World | AI Creativity Workshop for Kids" />
   <meta property="og:description" content="A live weekend workshop where kids aged 10+ learn AI by creating stories, songs, comics, games, and finger puppets. No coding needed." />
-  <meta property="og:url" content="https://fidgitalworld.com/fun-with-ai.html" />
+  <meta property="og:url" content="https://www.fidgitalworld.com/fun-with-ai.html" />
   <meta property="og:site_name" content="Fidgital World" />
   <meta property="og:locale" content="en_IN" />
 
@@ -30,7 +30,7 @@
     "@type": "EducationalOrganization",
     "name": "Fidgital World",
     "description": "Fidgital World is a platform where people explore building with AI. Through live, instructor-led workshops for kids and families, participants learn to use generative AI tools like Gemini, Suno, and Bolt to create original characters, illustrated storybooks, comics, theme songs, playable video games, paper finger puppets, and more. Workshops run as one focused day or split into two shorter sessions, covering creative AI for kids, AI-powered birthday party planning for parents, AI for special events and daily activities, and hands-on digital-to-physical craft projects. The platform bridges AI creativity with real life, teaching prompt engineering, AI image generation, AI music composition, no-code game development, and puppet design.",
-    "url": "https://fidgitalworld.com",
+    "url": "https://www.fidgitalworld.com",
     "sameAs": [],
     "areaServed": {
       "@type": "Country",
@@ -50,7 +50,7 @@
     "provider": {
       "@type": "EducationalOrganization",
       "name": "Fidgital World",
-      "url": "https://fidgitalworld.com"
+      "url": "https://www.fidgitalworld.com"
     },
     "educationalLevel": "Beginner",
     "audience": {
@@ -110,13 +110,13 @@
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://fidgitalworld.com/"
+        "item": "https://www.fidgitalworld.com/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Fun with AI",
-        "item": "https://fidgitalworld.com/fun-with-ai.html"
+        "item": "https://www.fidgitalworld.com/fun-with-ai.html"
       }
     ]
   }
@@ -154,6 +154,8 @@
     img { max-width: 100%; display: block; }
 
     /* ── Nav ── */
+    [hidden] { display: none !important; }
+    [data-fw-hide-empty]:empty { display: none !important; }
     .nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 50;
       background: rgba(255,253,240,0.95);
@@ -161,32 +163,31 @@
       border-bottom: 1px solid rgba(0,0,0,0.06);
     }
     .nav-inner {
-      max-width: 960px; margin: 0 auto;
+      max-width: 1100px; margin: 0 auto;
       padding: 0 16px; height: 60px;
-      display: flex; align-items: center; justify-content: space-between;
-      position: relative;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
     }
-    .nav-left { display: flex; align-items: center; gap: 14px; }
-    .nav-back { display: flex; align-items: center; gap: 4px; font-size: 13px; font-weight: 700; color: var(--dark); text-decoration: none; padding: 6px 4px; position: relative; z-index: 2; }
-    .nav-back svg { width: 15px; height: 15px; flex-shrink: 0; }
-    .nav-back .back-label { display: none; }
-    @media (min-width: 560px) { .nav-back .back-label { display: inline; } }
-    .nav-logo { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: 700; color: var(--dark); text-decoration: none; display: flex; align-items: center; }
-    .nav-logo-img { height: 36px; }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
+    .nav-logo-img { height: 36px; width: auto; }
+    .nav-right { display: flex; align-items: center; gap: 22px; }
+    .nav-link { display: none; font-size: 14px; font-weight: 700; color: var(--dark); text-decoration: none; }
+    .nav-link:hover { color: var(--teal); }
+    @media (min-width: 640px) { .nav-link { display: inline; } }
     .nav-cta {
+      display: inline-flex; align-items: center; min-height: 36px;
       background: var(--gold-dark); color: var(--dark);
-      padding: 6px 16px; border-radius: 50px;
-      font-size: 12px; font-weight: 700;
+      padding: 0 16px; border-radius: 50px;
+      font-size: 12px; font-weight: 700; white-space: nowrap;
       text-decoration: none; border: none; cursor: pointer;
     }
     .nav-cta:hover { filter: brightness(1.05); }
     @media (max-width: 479px) {
       .nav-logo-img { height: 26px; }
-      .nav-cta { padding: 6px 10px; font-size: 11px; }
+      .nav-cta { padding: 0 14px; }
     }
     @media (max-width: 359px) {
       .nav-logo-img { height: 22px; }
-      .nav-cta { padding: 5px 8px; font-size: 10px; }
+      .nav-cta { padding: 0 10px; font-size: 11px; }
     }
 
     /* ── Section bases ── */
@@ -576,6 +577,47 @@
       .feature-title { font-size: 24px; }
       .feature-desc { font-size: 18px; }
     }
+
+    /* ── Conversion additions ── */
+    .offer { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 12px; }
+    .offer:has(> :not([hidden])) { margin-bottom: 20px; }
+    .offer .price { font-size: clamp(30px, 8vw, 40px); font-weight: 800; color: var(--dark); line-height: 1; margin: 0; }
+    .offer .price-old { font-size: 16px; color: #8a8a82; text-decoration: line-through; margin: 0; }
+    .pricing-card .offer .price { font-size: clamp(36px, 9vw, 52px); }
+    .hero-actions { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+    @media (min-width: 640px) {
+      .hero-actions { flex-direction: row; justify-content: center; gap: 14px; }
+      .hero-actions .btn-full { width: auto; max-width: none; }
+    }
+    .secure-note { font-size: 12px; font-weight: 600; color: var(--muted); margin-top: 10px; }
+    .age-note { font-size: 12px; font-weight: 600; margin-top: 8px; }
+
+    .proof-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 20px; }
+    .proof-quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px; }
+    .section-proof { padding-top: 36px; padding-bottom: 36px; }
+
+    .sticky-cta { display: none; }
+    @media (max-width: 767px) {
+      .sticky-cta {
+        display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+        padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+        background: rgba(255,253,240,0.97); border-top: 1px solid var(--border);
+        box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+        transform: translateY(110%); visibility: hidden;
+        transition: transform 0.25s ease, visibility 0.25s;
+      }
+      .sticky-cta.show { transform: none; visibility: visible; }
+      .sticky-cta .btn { width: 100%; padding: 14px 20px; font-size: 16px; }
+      body.has-sticky-on #fw-cb-launcher { bottom: 84px; }
+      body.has-sticky-on #fw-cb-tip { bottom: 152px; }
+      .footer { padding-bottom: 92px; }
+    }
+
+    .footer-logo-wrap { margin-bottom: 12px; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 20px; margin-bottom: 14px; }
+    .footer-links a { color: var(--dark); font-size: 13px; font-weight: 700; text-decoration: none; padding: 6px 0; }
+    .footer-links a:hover { color: var(--teal); }
+    @media (prefers-reduced-motion: reduce) { .sticky-cta { transition: none; } }
   </style>
 </head>
 <body>
@@ -583,19 +625,17 @@
   <!-- Nav -->
   <nav class="nav">
     <div class="nav-inner">
-      <div class="nav-left">
-        <a href="index.html" class="nav-back">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12,19 5,12 12,5"/></svg>
-          <span class="back-label">All Programs</span>
-        </a>
-        <a href="index.html" class="nav-logo"><img src="Logo-1.png" alt="Fidgital World" class="nav-logo-img" /></a>
+      <a href="index.html" class="nav-logo"><img src="Logo-1.png" alt="Fidgital World" class="nav-logo-img" /></a>
+      <div class="nav-right">
+        <a href="index.html#programs" class="nav-link">AI Programs</a>
+        <a href="play.html" class="nav-link">Play Kit</a>
+        <a href="#pricing" class="nav-cta" data-lead="fun-with-ai" data-source="nav">Reserve a spot</a>
       </div>
-      <a href="#pricing" class="nav-cta">Reserve Your Spot</a>
     </div>
   </nav>
 
   <!-- Hero -->
-  <section class="section section-warm" style="padding-top: 110px;">
+  <section class="section section-warm" style="padding-top: 110px;" id="top">
     <div class="section-inner text-center">
       <div class="mb-6">
         <span class="badge badge-outline">
@@ -610,7 +650,7 @@
       </h1>
 
       <p class="text-body mb-7" style="max-width: 460px; margin-left: auto; margin-right: auto;">
-        2 live sessions where they build a character, story, comic, puppet, song &amp; game — all with AI.
+        2 live sessions where they build a character, story, comic, puppet, song &amp; game, all with AI.
       </p>
 
       <div class="pills mb-7">
@@ -632,13 +672,19 @@
         </span>
       </div>
 
-      <div class="mb-6 text-center">
-        <span class="badge badge-blue">💰 Pricing announced when this session opens</span>
+      <div class="offer">
+        <span class="price" data-fw="price" data-product="fun-with-ai" data-fw-hide-empty></span>
+        <span class="price-old" data-fw="priceOld" data-product="fun-with-ai" data-fw-hide-empty></span>
       </div>
+      <div class="offer">
+        <span class="badge badge-blue" data-fw="nextBatch" data-product="fun-with-ai" data-fw-hide-empty></span>
+        <span class="badge badge-outline" data-fw="seats" data-product="fun-with-ai" data-fw-hide-empty></span>
+      </div>
+      <span class="badge badge-blue mb-6" style="display:inline-flex;" data-fw-status="fun-with-ai:waitlist,soldout" hidden>📅 Next dates announced soon. Join the list to hear first.</span>
 
-      <div style="display:flex;justify-content:center;">
-        <a href="#pricing" class="btn btn-primary btn-full">
-          Start Building
+      <div class="hero-actions">
+        <a href="#pricing" class="btn btn-primary btn-full" data-lead="fun-with-ai" data-source="hero">
+          <span data-fw="cta" data-product="fun-with-ai">Reserve your spot</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
         </a>
       </div>
@@ -698,7 +744,7 @@
         <p class="text-body">2 sessions, about 4 hours total. Run it as one focused day, or split into two easier halves. Tap any stop to peek inside.</p>
       </div>
 
-      <h3 class="heading-md text-blue mb-3" style="margin-top:28px;">Session 1 — Imagine &amp; Design <span class="text-muted" style="font-weight:600;font-size:0.6em;">(about 2 hrs)</span></h3>
+      <h3 class="heading-md text-blue mb-3" style="margin-top:28px;">Session 1: Imagine &amp; Design <span class="text-muted" style="font-weight:600;font-size:0.6em;">(about 2 hrs)</span></h3>
 
       <div class="grid-3 stack-mobile mb-8">
         <div class="tile">
@@ -725,7 +771,7 @@
           </button>
           <div class="tile-detail">
             <ul>
-              <li>Design an original AI character — look, personality, powers</li>
+              <li>Design an original AI character: look, personality, powers</li>
               <li>Write and illustrate their storybook</li>
               <li>Make the calls that shape who this character is</li>
             </ul>
@@ -748,7 +794,7 @@
         </div>
       </div>
 
-      <h3 class="heading-md text-blue mb-3" style="margin-top:32px;">Session 2 — Build &amp; Bring to Life <span class="text-muted" style="font-weight:600;font-size:0.6em;">(about 2 hrs)</span></h3>
+      <h3 class="heading-md text-blue mb-3" style="margin-top:32px;">Session 2: Build &amp; Bring to Life <span class="text-muted" style="font-weight:600;font-size:0.6em;">(about 2 hrs)</span></h3>
 
       <div class="grid-3 stack-mobile">
         <div class="tile">
@@ -777,13 +823,13 @@
             <ul>
               <li>Write lyrics that capture their character's vibe</li>
               <li>Generate a full song with AI music tools, vocals included</li>
-              <li>Pick a style — pop, epic, silly, anything goes</li>
+              <li>Pick a style: pop, epic, silly, anything goes</li>
             </ul>
           </div>
         </div>
         <div class="tile">
           <div class="tile-head"><span class="tile-icon">🎮</span><span class="tile-title">Build a Game</span><span class="feature-time">50 min</span></div>
-          <p class="tile-teaser">The big finale — a real, playable game.</p>
+          <p class="tile-teaser">The big finale: a real, playable game.</p>
           <button class="tile-toggle" onclick="this.closest('.tile').classList.toggle('open')">
             <span class="label-view">View details</span><span class="label-hide">Hide details</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6,9 12,15 18,9"/></svg>
@@ -791,7 +837,7 @@
           <div class="tile-detail">
             <ul>
               <li>Design a simple game starring their character</li>
-              <li>Build it with AI — genuinely no coding required</li>
+              <li>Build it with AI, genuinely no coding required</li>
               <li>Play it, break it, fix it, play again</li>
             </ul>
           </div>
@@ -800,8 +846,21 @@
     </div>
   </section>
 
+  <!-- Proof (hidden until js/site-config.js has real numbers or quotes) -->
+  <section class="section section-proof" data-fw-needs="stats" hidden>
+    <div class="section-wide"><div class="proof-stats" data-fw-stats></div></div>
+  </section>
+  <section class="section section-warm" data-fw-needs="testimonials" hidden>
+    <div class="section-wide">
+      <div class="text-center mb-6">
+        <span class="badge badge-blue mb-3" style="display:inline-flex;">What parents say</span>
+      </div>
+      <div class="proof-quotes" data-fw-testimonials></div>
+    </div>
+  </section>
+
   <!-- Pricing -->
-  <section class="section section-cool" id="pricing">
+  <section class="section section-cool" id="pricing" data-sticky-hide>
     <div class="section-inner" style="max-width:480px;">
       <div class="text-center mb-7">
         <span class="badge badge-blue mb-3" style="display:inline-flex;">
@@ -812,8 +871,16 @@
       </div>
       <div class="pricing-card">
         <div class="text-center mb-5">
-          <span class="badge badge-blue" style="display:inline-flex;margin-bottom:8px;">💰 Pricing announced when this session opens</span>
-          <div class="text-muted" style="font-size:12px;font-weight:600;">Level 1 | Create with AI</div>
+          <div class="offer">
+            <span class="price" data-fw="price" data-product="fun-with-ai" data-fw-hide-empty></span>
+            <span class="price-old" data-fw="priceOld" data-product="fun-with-ai" data-fw-hide-empty></span>
+          </div>
+          <div class="offer">
+            <span class="badge badge-blue" data-fw="nextBatch" data-product="fun-with-ai" data-fw-hide-empty></span>
+            <span class="badge badge-outline" data-fw="seats" data-product="fun-with-ai" data-fw-hide-empty></span>
+          </div>
+          <span class="badge badge-blue" style="display:inline-flex;" data-fw-status="fun-with-ai:waitlist,soldout" hidden>📅 Next dates announced soon. Join the list to hear first.</span>
+          <div class="text-muted" style="font-size:12px;font-weight:600;margin-top:8px;">Level 1 | Create with AI</div>
         </div>
         <div class="check-grid mb-7">
           <div class="check-item">
@@ -841,11 +908,12 @@
             <span class="check-text">Prompt library for everything they build</span>
           </div>
         </div>
-        <a href="https://rzp.io/rzp/fidgital-world" class="btn btn-primary btn-block mb-2" style="padding:14px 28px;" target="_blank" rel="noopener noreferrer">
-          Reserve Your Spot
+        <a href="#pricing" class="btn btn-primary btn-block mb-2" style="padding:14px 28px;" data-lead="fun-with-ai" data-source="pricing">
+          <span data-fw="cta" data-product="fun-with-ai">Reserve your spot</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
         </a>
-        <p class="text-center text-muted" style="font-size:10px;font-weight:600;">Age 10+ · Basic English required</p>
+        <p class="text-center text-muted age-note">Age 10+ · Basic English required</p>
+        <p class="text-center text-muted secure-note" data-fw-status="fun-with-ai:open,preorder" hidden>🔒 Secure payment by Razorpay</p>
       </div>
     </div>
   </section>
@@ -881,7 +949,7 @@
     <div class="section-inner text-center">
       <span class="badge badge-outline mb-3" style="display:inline-flex;">Also from Fidgital World</span>
       <h2 class="heading-lg mb-4">Want them to build real-world skills too?</h2>
-      <p class="text-body mb-6">Learn with AI teaches research, creating &amp; speaking — same instructor, different focus.</p>
+      <p class="text-body mb-6">Learn with AI teaches research, creating &amp; speaking. Same instructor, different focus.</p>
       <a href="learn-with-ai.html" class="btn btn-primary">
         See Learn with AI
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
@@ -890,11 +958,11 @@
   </section>
 
   <!-- Final CTA -->
-  <section class="cta-section">
+  <section class="cta-section" data-sticky-hide>
     <div class="section-inner text-center">
       <p class="cta-heading">The first step into becoming a creator.</p>
-      <a href="#pricing" class="btn btn-dark">
-        Start Building Now
+      <a href="#pricing" class="btn btn-dark" data-lead="fun-with-ai" data-source="final">
+        <span data-fw="cta" data-product="fun-with-ai">Reserve your spot</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
       </a>
     </div>
@@ -902,13 +970,59 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <a href="index.html" class="footer-link">← All Fidgital World Programs</a>
-    <div class="footer-copy" style="margin-bottom:12px;"><a href="ai-survival-guide.html" style="color:var(--dark);" onclick="if(window.fwOpenChat){fwOpenChat();return false;}">🛡️ Free: The AI Safety Chat</a></div>
-    <div style="margin-bottom:12px;"><img src="Logo-2.png" alt="Fidgital World" class="footer-logo" /></div>
+    <div class="footer-logo-wrap"><img src="Logo-2.png" alt="Fidgital World" class="footer-logo" /></div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="index.html#programs">AI Programs</a>
+      <a href="fun-with-ai.html">Fun with AI</a>
+      <a href="learn-with-ai.html">Learn with AI</a>
+      <a href="play.html">Play Kit</a>
+      <a href="ai-survival-guide.html" onclick="if(window.fwOpenChat){fwOpenChat();return false;}">Free AI Safety Chat</a>
+    </nav>
     <div class="footer-copy">© 2026 Fidgital World · All rights reserved</div>
   </footer>
 
+  <!-- Sticky CTA (phones) -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="#pricing" class="btn btn-primary" data-lead="fun-with-ai" data-source="sticky"><span data-fw="cta" data-product="fun-with-ai">Reserve your spot</span></a>
+  </div>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/site.js" defer></script>
   <script src="ai-safety-widget.js" defer></script>
+  <script>
+    // Show the phone CTA bar once the hero has scrolled away, and hide it again over the booking card and the final CTA.
+    (function () {
+      var bar = document.getElementById('stickyCta');
+      var hero = document.getElementById('top');
+      if (!bar || !hero) return;
+      var heroGone = false, overTarget = 0;
+      var targets = document.querySelectorAll('[data-sticky-hide]');
+      function update() {
+        var on = heroGone && overTarget === 0;
+        bar.classList.toggle('show', on);
+        document.body.classList.toggle('has-sticky-on', on);
+      }
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (es) {
+          var e = es[es.length - 1];
+          heroGone = !e.isIntersecting && e.boundingClientRect.bottom <= 0;
+          update();
+        }).observe(hero);
+        var seen = new Set();
+        var io = new IntersectionObserver(function (es) {
+          es.forEach(function (e) { if (e.isIntersecting) seen.add(e.target); else seen.delete(e.target); });
+          overTarget = seen.size;
+          update();
+        });
+        targets.forEach(function (t) { io.observe(t); });
+      } else {
+        window.addEventListener('scroll', function () {
+          heroGone = hero.getBoundingClientRect().bottom <= 0;
+          update();
+        }, { passive: true });
+      }
+    })();
+  </script>
 
 </body>
 </html>
