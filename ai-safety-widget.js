@@ -33,7 +33,7 @@
       { reply: "Figure it out without the screen.", outcome: "You and your brother agree to take turns. The fight ends faster.", takeaway: "You have better people-skills than a robot!" }
     ]},
     { title: "The Face Filter App", msg: "Upload a picture of your face right now to see what you will look like when you are old!", choices: [
-      { reply: "Upload a selfie.", outcome: "The picture is funny, but the app's rules say they keep your photo forever to train other computers.", takeaway: "Your face is personal information. be careful where you share it." },
+      { reply: "Upload a selfie.", outcome: "The picture is funny, but the app's rules say they keep your photo forever to train other computers.", takeaway: "Your face is personal information. Be careful where you share it." },
       { reply: "Skip it and play something else.", outcome: "You miss a 5-second laugh, but you keep your privacy 100% safe.", takeaway: "It's always okay to say \"no\" when an app asks for personal info." }
     ]},
     { title: "The \"Lazy Brain\" Summary", msg: "Don't read that long book for English class. Here is a 3-sentence summary.", choices: [
